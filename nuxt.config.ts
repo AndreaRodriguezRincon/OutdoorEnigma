@@ -1,0 +1,23 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  srcDir: "",
+  devtools: { enabled: true },
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
+  modules: ["nuxt-primevue", "@vee-validate/nuxt"],
+  primevue: {
+    components: {
+      prefix: "P",
+    },
+  },
+  css: [
+    "primeflex/primeflex.css",
+    "primeicons/primeicons.css",
+    "primevue/resources/themes/saga-blue/theme.css",
+    "/assets/css/default.css",
+  ],
+});
