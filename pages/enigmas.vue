@@ -17,15 +17,17 @@ const poligonoColor = "#c4661f";
 <template>
   <div class="enigmas">
     <TheHeader />
-    <div class="ml-3 mr-3 lg:ml-5 lg:mr-5">
+    <div class="ml-4 mr-3">
       <div class="flex flex-column flex justify-content-center">
-        <span class="font-bold text-2xl text-brown mb-2"
+        <span
+          class="flex align-items-center justify-content-center font-bold text-xl text-brown mb-2"
           >"La Noche de los Treinta en Valladolid"</span
         >
         <img
           src="../assets/images/enigmas/fiestaHistoria.jpg"
           alt="Portada"
           width="350"
+          class="flex align-items-center justify-content-center"
         />
       </div>
       <div class="flex flex-column mt-4">
