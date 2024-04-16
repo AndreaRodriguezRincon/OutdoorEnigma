@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ["nuxt-primevue", "@vee-validate/nuxt"],
+  modules: ["nuxt-primevue", "@vee-validate/nuxt", "nuxt3-leaflet"],
   primevue: {
     components: {
       prefix: "P",

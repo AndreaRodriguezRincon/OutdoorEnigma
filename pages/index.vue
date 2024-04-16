@@ -3,7 +3,7 @@
 <template>
   <div class="inicio">
     <TheHeader />
-    <span class="sm:ml-1 lg:ml-8 text-5xl font-bold text-orange-600"
+    <span class="ml-2 text-3xl md:ml-8 md:text-5xl font-bold text-orange-600"
       >Enigmas en la ciudad</span
     >
   </div>
