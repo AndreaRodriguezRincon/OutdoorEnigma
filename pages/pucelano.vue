@@ -1,23 +1,14 @@
 <script setup>
 const router = useRouter();
 const inicioJuego = () => {
-  router.push("/inicioJuego");
+  router.push("/inicioEnigma");
 };
 const visible = ref(false);
 </script>
 <template>
   <div class="enigmas">
+    <TheHeaderEnigma />
     <ConfirmExit v-model:visible="visible" />
-    <div
-      class="flex justify-content-center bg-green p-2 border-round-bottom-2xl"
-    >
-      <img
-        src="../assets/images/base/logo.png"
-        alt="Image"
-        width="150px"
-        class="lg:ml-6"
-      />
-    </div>
     <div class="ml-3 mr-3 flex justify-content-center">
       <PCard
         class="lg:w-6 mt-3 border-green shadow-3"
@@ -71,9 +62,10 @@ const visible = ref(false);
     <div>
       <PButton
         rounded
+        text
         icon="pi pi-arrow-left"
         label="Salir"
-        class="text-white bg-orange border-none mt-6 mb-4 lg:ml-4"
+        class="text-orange mt-6 mb-4 ml-2 lg:ml-4 hover:bg-white focus:bg-white"
         @click="visible = true"
       />
     </div>
@@ -95,5 +87,8 @@ const visible = ref(false);
 }
 .bg-orange {
   background-color: #c4661f;
+}
+.text-orange {
+  color: #c4661f;
 }
 </style>

@@ -11,16 +11,23 @@ const salirJuego = () => {
     ref="dialogRef"
     v-model:visible="visible"
     modal
-    header="Salir del Juego"
+    header="Salir del enigma"
     class="text-brown min-w-min text-brown shadow-3"
+    :pt="{
+      title: {
+        class: 'text-orange-700 ',
+      },
+    }"
   >
-    <span class="text-brown">¿Estás seguro que deseas abandonar el juego?</span>
+    <span class="text-brown"
+      >¿Estás seguro que deseas abandonar el enigma?</span
+    >
     <div class="flex justify-content-center mt-4 gap-3">
       <PButton
         rounded
         label="Cancelar"
         @click="dialogRef.close"
-        class="bg-orange border-none shadow-3"
+        class="bg-brown border-none shadow-3"
       />
       <PButton
         rounded
@@ -47,5 +54,8 @@ const salirJuego = () => {
 }
 .bg-orange {
   background-color: #c4661f;
+}
+.bg-brown {
+  background-color: #783d19;
 }
 </style>

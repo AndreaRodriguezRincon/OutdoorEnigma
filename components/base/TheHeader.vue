@@ -30,14 +30,17 @@ const items = ref([
       root: {
         class: 'flex justify-content-between border-transparent bg-transparent',
       },
+      menuitem: {
+        class: 'selected:bg-white',
+      },
       content: {
-        class: 'hover:bg-orange-700',
+        class: 'hover:bg-white onclick:bg-white',
       },
       label: {
-        class: 'text-white',
+        class: 'text-orange-700',
       },
       button: {
-        class: 'text-orange-700',
+        class: 'text-orange-700 bg-transparent',
       },
     }"
   >

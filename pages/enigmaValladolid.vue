@@ -21,17 +21,16 @@ const mostrarPucelano = () => {
 <template>
   <div class="enigmas">
     <TheHeader />
-    <div class="ml-3 mr-3">
-      <div class="flex flex-column flex justify-content-center">
-        <span
-          class="flex align-items-center justify-content-center font-bold text-xl text-brown mb-2"
+
+    <div class="ml-3 mr-3 flex flex-column flex align-items-center">
+      <div class="flex flex-column flex align-items-center">
+        <span class="font-bold text-xl text-brown mb-2"
           >"La Noche de los Treinta en Valladolid"</span
         >
         <img
-          src="../assets/images/enigmas/fiestaHistoria.jpg"
+          src="../assets/images/enigmas/historiaValladolid.jpg"
           alt="Portada"
           width="350"
-          class="flex align-items-center justify-content-center"
         />
       </div>
       <div class="flex flex-column mt-4">
@@ -41,7 +40,7 @@ const mostrarPucelano = () => {
           <span class="text-brown"> Plaza Mayor de Valladolid </span>
         </div>
       </div>
-      <div class="flex flex-column mt-4">
+      <div class="flex flex-column flex align-items-center mt-4">
         <span class="font-bold text-xl text-brown"> Historia</span>
         <span class="mt-2 text-brown text-justify md:w-5">
           Gaby decide celebrar su 30 cumpleaños en la ciudad de Valladolid en
@@ -56,7 +55,7 @@ const mostrarPucelano = () => {
           de Valladolid.
         </span>
       </div>
-      <div class="flex justify-content-center gap-5 mt-5">
+      <div class="flex gap-5 mt-5">
         <PTag rounded class="bg-white border-2 border-green shadow-3">
           <div class="flex align-items-center gap-3 mr-3">
             <img
@@ -94,11 +93,11 @@ const mostrarPucelano = () => {
           </LMap>
         </div>
       </div>
-      <div class="flex flex-column flex justify-content-center mt-4">
+      <div class="flex flex-column mt-4">
         <span class="font-bold text-xl text-brown">Recomendaciones</span>
         <PTag
           rounded
-          class="bg-white border-2 border-green shadow-3 md:w-3 h-3rem mt-3"
+          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
         >
           <div class="flex align-items-center gap-3">
             <img
@@ -111,7 +110,7 @@ const mostrarPucelano = () => {
         </PTag>
         <PTag
           rounded
-          class="bg-white border-2 border-green shadow-3 md:w-3 h-3rem mt-3"
+          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
         >
           <div class="flex align-items-center gap-3">
             <img
@@ -124,7 +123,7 @@ const mostrarPucelano = () => {
         </PTag>
         <PTag
           rounded
-          class="bg-white border-2 border-green shadow-3 md:w-3 h-3rem mt-3"
+          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
         >
           <div class="flex align-items-center gap-4">
             <img
@@ -139,7 +138,7 @@ const mostrarPucelano = () => {
       <div class="flex justify-content-center">
         <PButton
           rounded
-          label="Iniciar Juego
+          label="Iniciar Enigma
 
     "
           class="mt-4 mb-4 shadow-3 bg-orange border-none"
