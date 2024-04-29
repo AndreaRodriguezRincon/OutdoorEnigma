@@ -1,7 +1,7 @@
 <script setup>
 const router = useRouter();
 const inicioJuego = () => {
-  router.push("/inicioEnigma");
+  router.push("/prueba1");
 };
 const visible = ref(false);
 </script>
@@ -77,7 +77,6 @@ const visible = ref(false);
     rgba(169, 179, 136, 100%),
     rgba(201, 137, 88, 30%)
   );
-  height: 100vh;
 }
 .text-brown {
   color: #783d19;

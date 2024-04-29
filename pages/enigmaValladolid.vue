@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 const zoom = ref(15);
 const poligonoCoords = ref([
   [41.65198, -4.72854],
@@ -15,7 +14,7 @@ const poligonoCoords = ref([
 const poligonoColor = "#c4661f";
 const router = useRouter();
 const mostrarPucelano = () => {
-  router.push("/pucelano");
+  router.push("/inicioEnigma");
 };
 </script>
 <template>

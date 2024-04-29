@@ -1,6 +1,7 @@
 <script setup>
-const primeraPrueba = () => {
-  router.push("/inicioJuego");
+const router = useRouter();
+const explicarPucelano = () => {
+  router.push("/pucelano");
 };
 const visible = ref(false);
 </script>
@@ -19,8 +20,8 @@ const visible = ref(false);
         <PButton
           rounded
           label="Continuar"
-          @click="primeraPrueba"
           class="bg-orange border-none shadow-3"
+          @click="explicarPucelano"
         />
       </div>
     </div>
