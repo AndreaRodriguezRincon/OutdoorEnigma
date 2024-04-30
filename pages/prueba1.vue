@@ -1,15 +1,17 @@
 <script setup>
 const visible = ref(false);
 const visiblePucelano = ref(false);
+const visibleMap = ref(false);
 </script>
 <template>
   <div class="enigmas">
     <DialogPucelano v-model:visible="visiblePucelano" />
+    <DialogMap v-model:visible="visibleMap" />
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest />
     <Pucelano @click="visiblePucelano = true" />
     <CardTest />
-    <div>
+    <div class="flex flex-row flex justify-content-between">
       <PButton
         rounded
         text
@@ -18,6 +20,7 @@ const visiblePucelano = ref(false);
         class="text-orange mt-6 mb-4 ml-2 lg:ml-4 hover:bg-white focus:bg-white"
         @click="visible = true"
       />
+      <MapPreview @click="visibleMap = true" />
     </div>
   </div>
 </template>
