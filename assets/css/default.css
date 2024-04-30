@@ -6,3 +6,17 @@
 body {
   margin: 0;
 }
+.stepsDiv .p-disabled,
+.stepsDiv .p-component:disabled {
+  opacity: 1;
+}
+.stepsDiv .p-steps .p-steps-item:before {
+  border-top: 2px solid #a9b388;
+}
+
+.p-inputtext:enabled:hover {
+  border-color: #a9b388;
+}
+.p-inputtext:enabled:focus {
+  border-color: #a9b388;
+}

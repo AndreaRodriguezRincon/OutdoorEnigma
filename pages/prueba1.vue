@@ -1,29 +1,35 @@
 <script setup>
-const zoom = ref(25);
-const lat = ref(0);
-const lng = ref(0);
-const getLocation = () => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      lat.value = position.coords.latitude;
-      lng.value = position.coords.longitude;
-    });
-  }
-};
+const visible = ref(false);
+const visiblePucelano = ref(false);
 </script>
-
 <template>
-  <button @click="getLocation">Get Location</button>
-  {{ lat }} {{ lng }}
-  <div class="mt-3" style="height: 30rem; width: 22rem">
-    <LMap ref="map" :zoom="zoom" :center="[lat, lng]">
-      <LTileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&amp;copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-        layer-type="base"
-        name="OpenStreetMap"
+  <div class="enigmas">
+    <DialogPucelano v-model:visible="visiblePucelano" />
+    <ConfirmExit v-model:visible="visible" />
+    <TheHeaderEnigmaTest />
+    <Pucelano @click="visiblePucelano = true" />
+    <CardTest />
+    <div>
+      <PButton
+        rounded
+        text
+        icon="pi pi-arrow-left"
+        label="Salir"
+        class="text-orange mt-6 mb-4 ml-2 lg:ml-4 hover:bg-white focus:bg-white"
+        @click="visible = true"
       />
-      <LMarker :lat-lng="[lat, lng]" />
-    </LMap>
+    </div>
   </div>
 </template>
+<style scoped>
+.enigmas {
+  background: linear-gradient(
+    rgba(169, 179, 136, 100%),
+    rgba(201, 137, 88, 30%)
+  );
+  height: 100vh;
+}
+.text-orange {
+  color: #c4661f;
+}
+</style>

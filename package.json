@@ -10,13 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@targomo/core": "^0.7.12",
+    "@targomo/googlemaps": "^0.1.1",
+    "@targomo/leaflet": "^0.1.1",
     "@vee-validate/nuxt": "^4.12.5",
+    "leaflet-routing-machine": "^3.2.12",
     "nuxt": "^3.10.3",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "vee-validate": "^4.12.5",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue-timer-hook": "^1.0.84",
+    "vue3-leaflet": "^1.0.48"
   },
   "devDependencies": {
     "nuxt-primevue": "^0.3.1",

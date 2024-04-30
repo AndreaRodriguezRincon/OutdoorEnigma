@@ -4,6 +4,20 @@ const explicarPucelano = () => {
   router.push("/pucelano");
 };
 const visible = ref(false);
+const lat = ref(0);
+const lng = ref(0);
+const getLocation = () => {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      lat.value = position.coords.latitude;
+      lng.value = position.coords.longitude;
+    });
+  }
+};
+onMounted(() => {
+  getLocation();
+});
+
 </script>
 <template>
   <div class="enigmas">
@@ -51,6 +65,7 @@ const visible = ref(false);
 .bg-green {
   background-color: #5f6f52;
 }
+
 .bg-orange {
   background-color: #c4661f;
 }
