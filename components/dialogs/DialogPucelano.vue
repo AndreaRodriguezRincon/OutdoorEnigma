@@ -1,4 +1,10 @@
 <script setup>
+const props = defineProps({
+  pucelano: {
+    type: Object,
+    required: true,
+  },
+});
 const visible = ref(false);
 </script>
 <template>
@@ -20,6 +26,6 @@ const visible = ref(false);
       class="mt-2"
     />
     <span class="text-brown">Hola, ¿necesitas mi ayuda?</span>
-    <AccordionTracks />
+    <AccordionTracks :pucelano="props.pucelano" />
   </PDialog>
 </template>

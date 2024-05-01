@@ -1,7 +1,10 @@
 <script setup>
 const router = useRouter();
 const inicioJuego = () => {
-  router.push("/prueba1");
+  router.push({
+    path: "tests",
+    query: { question: "test1" },
+  });
 };
 const visible = ref(false);
 </script>
@@ -10,14 +13,7 @@ const visible = ref(false);
     <TheHeaderEnigma />
     <ConfirmExit v-model:visible="visible" />
     <div class="ml-3 mr-3 flex justify-content-center">
-      <PCard
-        class="lg:w-6 mt-3 border-green shadow-3"
-        :pt="{
-          root: {
-            class: 'border-round-3xl ',
-          },
-        }"
-      >
+      <PCard class="lg:w-6 mt-3 border-green border-round-3xl shadow-3">
         <template #content>
           <img
             src="../assets/images/juego/Pucelano.png"
