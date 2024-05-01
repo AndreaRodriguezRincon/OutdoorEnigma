@@ -23,7 +23,7 @@ const checkAnswer = () => {
 };
 </script>
 <template>
-  <PCard class="mr-3 ml-3 mt-4 lg:w-6 border-green border-round-3xl">
+  <PCard class="mt-4 lg:w-6 border-green border-round-3xl">
     <template #content>
       <div class="flex flex-column flex align-items-center">
         <span class="mr-2 text-center text-brown">

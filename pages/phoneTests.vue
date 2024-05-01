@@ -15,7 +15,7 @@ const visible = ref(false);
   <div class="enigmas">
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
-    <div class="ml-3 mr-3 flex justify-content-center">
+    <div class="flex justify-content-center">
       <PCard class="mt-4 lg:w-6 border-round-3xl">
         <template #title>
           <span class="text-3xl text-green flex justify-content-center"
