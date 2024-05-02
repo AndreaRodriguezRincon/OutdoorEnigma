@@ -29,7 +29,7 @@ const visible = ref(false);
         <template #content>
           <div class="flex flex-column flex align-items-center">
             <img
-              :src="questionData.imagePhone"
+              :src="`${questionData.imagePhone}`"
               alt="Imagen móvil con letra"
               width="300"
             />
