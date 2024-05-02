@@ -11,9 +11,10 @@ const visibleMap = ref(false);
     <DialogPucelano
       v-model:visible="visiblePucelano"
       :pucelano="questionData.pucelano"
+      class="w-10 lg:w-6"
     />
-    <DialogMap v-model:visible="visibleMap" />
-    <ConfirmExit v-model:visible="visible" />
+    <DialogMap v-model:visible="visibleMap" class="w-10 lg:w-6" />
+    <ConfirmExit v-model:visible="visible" class="w-10 lg:w-6" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
     <div class="ml-3 mr-3 flex flex-column flex align-items-center">
       <div class="flex flex-row gap-8 flex align-items-center">

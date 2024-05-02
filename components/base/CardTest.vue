@@ -10,6 +10,7 @@ const answer = ref("");
 const correctAnswer = ref(null);
 const visible = ref(false);
 const checkAnswer = () => {
+  console.log(answer.value);
   if (props.test.answer === answer.value) {
     correctAnswer.value = true;
     router.push({
@@ -21,9 +22,10 @@ const checkAnswer = () => {
     answer.value = "";
   }
 };
+console.log(answer.value);
 </script>
 <template>
-  <PCard class="mt-4 lg:w-6 border-green border-round-3xl">
+  <PCard class="mt-4 w-full lg:w-6 border-green border-round-3xl">
     <template #content>
       <div class="flex flex-column flex align-items-center">
         <span class="mr-2 text-center text-brown">
@@ -32,13 +34,28 @@ const checkAnswer = () => {
         <img
           :src="`${props.test.imagePath}`"
           alt="Imagen prueba"
-          width="250"
+          width="350"
           class="mt-4"
         />
         <PFloatLabel class="mt-6">
           <PInputText
+            v-if="props.test.type === 'input'"
             id="answer"
             v-model="answer"
+            class="border-round-xl border-2 shadow-3"
+          />
+          <PInputMask
+            v-else-if="props.test.type === 'code'"
+            id="answer"
+            v-model="answer"
+            mask="99-9"
+            class="border-round-xl border-2 shadow-3"
+          />
+          <PInputMask
+            v-else
+            id="answer"
+            v-model="answer"
+            mask="99-99-9999"
             class="border-round-xl border-2 shadow-3"
           />
           <label for="answer" class="text-brown">Respuesta</label>

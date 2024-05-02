@@ -46,7 +46,7 @@ export const tests = {
     question:
       "¿Cuál era el nombre de esta calle antes del gran incendio de 1561? ",
     image: true,
-    imagePath: "/images/tests/test2.png",
+    imagePath: "/images/tests/test2.jpg",
     answer: "Calle Costanilla",
     place: "Calle de la Platería",
     imageInfoPath: "/images/info/test3.png",
@@ -58,17 +58,17 @@ export const tests = {
       clue1: {
         text: "Fíjate en el suelo.",
         imagen: false,
-        imagePath: "./",
+        imagePath: "",
       },
       clue2: {
-        text: "Dirígete junto al portal 1A",
+        text: "Dirígete junto al portal 1A.",
         imagen: false,
         imagePath: "",
       },
       clue3: {
         text: "",
         imagen: true,
-        imagePath: "",
+        imagePath: "/images/clues/test1.png",
       },
       answer: {
         text: "Calle Costanilla",
@@ -82,7 +82,7 @@ export const tests = {
     urlQueryParam: "test3",
     urlQueryParamNextTest: "test4",
     activeIndex: 2,
-    type: "inputs",
+    type: "code",
     question: "Introduce la clave:",
     image: true,
     imagePath: "/images/tests/test3.png",
@@ -105,12 +105,12 @@ export const tests = {
         imagePath: "",
       },
       clue3: {
-        text: "Cada lado del octógono contiene 7",
+        text: "Cada lado del octógono contiene 7.",
         imagen: false,
         imagePath: "",
       },
       answer: {
-        text: "56 - 8 ",
+        text: "56-8 ",
         imagen: false,
         imagePath: "",
       },
@@ -121,12 +121,12 @@ export const tests = {
     urlQueryParamNextTest: "test5",
     activeIndex: 3,
     type: "date",
-    question: "Localiza una fecha en la fachada: ",
+    question: "Localiza una fecha en la fachada de la Iglesia de San Pablo ",
     image: true,
-    imagePath: "/images/tests/test4.png",
-    answer: "7 de Diciembre de 1600",
+    imagePath: "/images/tests/test4.jpg",
+    answer: "07-12-1600",
     place: "Iglesia de San Pablo",
-    imageInfoPath: "/images/info/test4.png",
+    imageInfoPath: "/images/info/test4.jpg",
     textInfo:
       "El Conde Ansúrez, figura histórica destacada en la historia de España, emerge como un símbolo de valentía, astucia y lealtad en los turbulentos tiempos de la Reconquista. Su legado se enraíza en la Castilla medieval, donde su influencia política y militar marcó un hito en la consolidación del reino. Nacido en el siglo X en la región de León, Pedro Ansúrez, más conocido como el Conde Ansúrez, se erigió como un líder indiscutible durante una época caracterizada por las luchas entre cristianos y musulmanes por el control de la península ibérica. Hombre de gran inteligencia y destreza militar, Ansúrez dedicó su vida a defender y expandir los territorios cristianos frente al avance musulmán. Uno de los momentos más destacados en la vida del Conde Ansúrez fue su participación en la batalla de Simancas en el año 939, donde las fuerzas cristianas lideradas por él lograron una victoria crucial sobre el califato de Córdoba. Esta batalla no solo consolidó su posición como un líder militar respetado, sino que también contribuyó significativamente a la expansión del reino de León.",
     imagePhone: "/images/phone/phoneO.png",
@@ -148,7 +148,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "7 de Diciembre de 1600",
+        text: "07-12-1600",
         imagen: false,
         imagePath: "",
       },
@@ -159,9 +159,10 @@ export const tests = {
     urlQueryParamNextTest: "test6",
     activeIndex: 4,
     type: "input",
-    question: "¿Qué flor se encuentra en la fachada?",
+    question:
+      "¿Qué flor se encuentra en la fachada del Museo Nacional de Escultura?",
     image: true,
-    imagePath: "/images/tests/test5.png",
+    imagePath: "/images/tests/test5.jpg",
     answer: "Flor de Lis",
     place: "Museo Nacional de Escultura",
     imageInfoPath: "/images/juego/test1.png",
@@ -183,7 +184,7 @@ export const tests = {
       clue3: {
         text: "",
         imagen: true,
-        imagePath: "",
+        imagePath: "/images/clues/test5.png",
       },
       answer: {
         text: "Flor de Lis",
@@ -237,7 +238,7 @@ export const tests = {
     type: "input",
     question: "Me quiere, no me quiere…",
     image: true,
-    imagePath: "/images/tests/test7.png",
+    imagePath: "/images/tests/test7.jpg",
     answer: "No me quiere",
     place: "Iglesia la Antigua",
     imageInfoPath: "/images/info/test7.png",
@@ -249,7 +250,7 @@ export const tests = {
       clue1: {
         text: "Comienza por me quiere.",
         imagen: false,
-        imagePath: "./",
+        imagePath: "",
       },
       clue2: {
         text: "Busca la flor más representativa.",
@@ -259,7 +260,7 @@ export const tests = {
       clue3: {
         text: "",
         imagen: true,
-        imagePath: "",
+        imagePath: "/images/clues/test7.png",
       },
       answer: {
         text: "No me quiere",
@@ -312,10 +313,10 @@ export const tests = {
     urlQueryParamNextTest: "test10",
     activeIndex: 8,
     type: "input",
-    question: "Indica la posición que ocupa la orden que no está presente",
+    question: "Indica el número de la orden militar que no está presente",
     image: true,
     imagePath: "/images/tests/test9.png",
-    answer: "Cuarta",
+    answer: "4",
     place: "Academia de Caballería",
     imageInfoPath: "/images/info/test9.png",
     textInfo:
@@ -339,7 +340,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "Cuarta",
+        text: "4",
         imagen: false,
         imagePath: "",
       },
@@ -352,24 +353,24 @@ export const tests = {
     type: "input",
     question: "Aquí murió...",
     image: true,
-    imagePath: "/images/tests/test10.png",
+    imagePath: "/images/tests/test10.jpg",
     answer: "Cristobal Colón",
     place: "Plaza Mayor",
-    imageInfoPath: "/images/info/test10.png",
+    imageInfoPath: "/images/info/test10.jpg",
     textInfo:
       "El Conde Ansúrez, figura histórica destacada en la historia de España, emerge como un símbolo de valentía, astucia y lealtad en los turbulentos tiempos de la Reconquista. Su legado se enraíza en la Castilla medieval, donde su influencia política y militar marcó un hito en la consolidación del reino. Nacido en el siglo X en la región de León, Pedro Ansúrez, más conocido como el Conde Ansúrez, se erigió como un líder indiscutible durante una época caracterizada por las luchas entre cristianos y musulmanes por el control de la península ibérica. Hombre de gran inteligencia y destreza militar, Ansúrez dedicó su vida a defender y expandir los territorios cristianos frente al avance musulmán. Uno de los momentos más destacados en la vida del Conde Ansúrez fue su participación en la batalla de Simancas en el año 939, donde las fuerzas cristianas lideradas por él lograron una victoria crucial sobre el califato de Córdoba. Esta batalla no solo consolidó su posición como un líder militar respetado, sino que también contribuyó significativamente a la expansión del reino de León.",
     imagePhone: "/images/phone/phoneV.png",
     index: "décimo",
     pucelano: {
       clue1: {
-        text: "Lugar donde se encontraba el Convento de San Francisco.",
+        text: "Manten la vista en el suelo.",
         imagen: false,
         imagePath: "./",
       },
       clue2: {
-        text: "Manten la vista en el suelo.",
-        imagen: false,
-        imagePath: "",
+        text: "",
+        imagen: true,
+        imagePath: "/images/clues/test10.png",
       },
       clue3: {
         text: "Juanto al Teatro Zorilla.",
