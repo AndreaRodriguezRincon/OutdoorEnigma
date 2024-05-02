@@ -7,7 +7,7 @@ export const tests = {
     question:
       "Encuentra la ubicación de estos dos ornamentos y especifica el nombre del lugar o monumento donde se encuentran.",
     image: true,
-    imagePath: "~/assets/images/juego/test1.png",
+    imagePath: "../../../assets/images/tests/test.png",
     answer: "Conde Pedro Ansurez",
     place: "Plaza Mayor",
     imageInfoPath: "~/assets/images/juego/test1.png",
@@ -32,7 +32,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "Conde Pedo Ansurez.",
+        text: "Conde Pedro Ansurez",
         imagen: false,
         imagePath: "",
       },
@@ -110,7 +110,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "56 arcos -  8 tendidos.",
+        text: "56 - 8 ",
         imagen: false,
         imagePath: "",
       },
@@ -148,7 +148,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "7 de Diciembre de 1600 ",
+        text: "7 de Diciembre de 1600",
         imagen: false,
         imagePath: "",
       },
@@ -301,7 +301,7 @@ export const tests = {
         imagePath: "",
       },
       answer: {
-        text: "Duque salió del Pisuerga de recrear.",
+        text: "Duque salió del Pisuerga de recrear",
         imagen: false,
         imagePath: "",
       },

@@ -20,7 +20,7 @@ const visible = ref(false);
     }"
   >
     <img
-      src="../../assets/images/base/Pucelano.png"
+      src="../../assets/images/enigma/pucelano.png"
       alt="Pucelano"
       width="120"
       class="mt-2"

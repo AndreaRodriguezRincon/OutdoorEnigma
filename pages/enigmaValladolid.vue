@@ -27,7 +27,7 @@ const mostrarPucelano = () => {
           >"La Noche de los Treinta en Valladolid"</span
         >
         <img
-          src="../assets/images/enigmas/historiaValladolid.jpg"
+          src="../assets/images/enigma/historiaValladolid.jpg"
           alt="Portada"
           width="350"
         />
@@ -59,7 +59,7 @@ const mostrarPucelano = () => {
           <div class="flex align-items-center gap-3 mr-3">
             <img
               alt="Tiempo"
-              src="../assets/images/iconos/tiempo.png"
+              src="../assets/images/icons/tiempo.png"
               style="width: 20px"
               class="ml-2"
             />
@@ -70,7 +70,7 @@ const mostrarPucelano = () => {
           <div class="flex align-items-center gap-3 mr-3">
             <img
               alt="Tiempo"
-              src="../assets/images/iconos/km.png"
+              src="../assets/images/icons/km.png"
               style="width: 25px"
               class="ml-2"
             />
@@ -101,7 +101,7 @@ const mostrarPucelano = () => {
           <div class="flex align-items-center gap-3">
             <img
               alt="Tiempo"
-              src="../assets/images/iconos/bateria.png"
+              src="../assets/images/icons/bateria.png"
               style="width: 40px"
             />
             <span class="text-base text-green">Batería +70% </span>
@@ -114,7 +114,7 @@ const mostrarPucelano = () => {
           <div class="flex align-items-center gap-3">
             <img
               alt="Tiempo"
-              src="../assets/images/iconos/zapatos.png"
+              src="../assets/images/icons/zapatos.png"
               style="width: 40px"
             />
             <span class="text-base text-green">Calzado y ropa comoda </span>
@@ -127,7 +127,7 @@ const mostrarPucelano = () => {
           <div class="flex align-items-center gap-4">
             <img
               alt="Tiempo"
-              src="../assets/images/iconos/clima.png"
+              src="../assets/images/icons/clima.png"
               style="width: 40px"
             />
             <span class="text-base text-green"> Revisar el tiempo </span>

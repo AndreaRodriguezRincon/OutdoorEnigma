@@ -14,9 +14,8 @@ const visible = ref(false);
     }"
   >
     <img
-      src="../../assets/images/base/mapaVistaPrevia.png"
+      src="../../assets/images/enigma/mapaVistaPrevia.png"
       alt="Pucelano"
       width="120"
   /></PDialog>
 </template>
-

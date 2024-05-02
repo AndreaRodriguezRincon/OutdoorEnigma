@@ -4,7 +4,7 @@ const visible = ref(false);
 <template>
   <div class="mt-4 ml-4">
     <img
-      src="../../assets/images/base/Pucelano.png"
+      src="../../assets/images/enigma/pucelano.png"
       alt="Pucelano"
       width="120"
     />

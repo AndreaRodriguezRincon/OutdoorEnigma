@@ -16,7 +16,7 @@ const visible = ref(false);
       <PCard class="lg:w-6 mt-3 border-green border-round-3xl shadow-3">
         <template #content>
           <img
-            src="../assets/images/juego/Pucelano.png"
+            src="../assets/images/enigma/pucelano.png"
             alt="Image"
             width="100px"
             class="lg:ml-6"

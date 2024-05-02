@@ -17,7 +17,6 @@ const getLocation = () => {
 onMounted(() => {
   getLocation();
 });
-
 </script>
 <template>
   <div class="enigmas">
@@ -25,7 +24,7 @@ onMounted(() => {
     <ConfirmExit v-model:visible="visible" />
     <div class="mt-3 flex flex-column flex align-items-center">
       <PImage
-        src="/_nuxt/assets/images/juego/carta.png"
+        src="/_nuxt/assets/images/enigma/carta.png"
         alt="Image"
         width="300"
         preview

@@ -9,7 +9,7 @@ const visible = ref(false);
 <template>
   <div class="flex flex-column mt-4 mr-4 mb-4">
     <img
-      src="../../assets/images/base/mapaVistaPrevia.png"
+      src="../../assets/images/enigma/mapaVistaPrevia.png"
       alt="Vista previa mapa"
       width="120"
     />
