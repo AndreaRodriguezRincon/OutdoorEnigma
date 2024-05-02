@@ -45,7 +45,7 @@ const items = ref([
     }"
   >
     <template #start>
-      <img src="../../assets/images/base/logo.png" alt="Logo" class="h-4rem" />
+      <img src="/images/base/logo.png" alt="Logo" class="h-4rem" />
     </template>
   </PMenubar>
 </template>

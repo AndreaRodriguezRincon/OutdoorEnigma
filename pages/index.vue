@@ -15,7 +15,7 @@
 </template>
 <style scoped>
 .inicio {
-  background-image: url("../assets/images/base/fondo.png");
+  background-image: url("/images/base/fondo.png");
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -29,7 +29,12 @@ const checkAnswer = () => {
         <span class="mr-2 text-center text-brown">
           {{ props.test.question }}
         </span>
-        <img :src="props.test.imagePath" alt="Imagen prueba" width="125" />
+        <img
+          :src="`${props.test.imagePath}`"
+          alt="Imagen prueba"
+          width="250"
+          class="mt-4"
+        />
         <PFloatLabel class="mt-6">
           <PInputText
             id="answer"

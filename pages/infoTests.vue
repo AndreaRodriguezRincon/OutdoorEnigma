@@ -1,5 +1,5 @@
 <script setup>
-import { tests } from "~/assets/data";
+import { tests } from "~/data/data";
 const { query } = useRoute();
 const router = useRouter();
 const questionData = tests[query.question];

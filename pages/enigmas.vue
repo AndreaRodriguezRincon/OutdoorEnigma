@@ -13,7 +13,7 @@ const mostrarHistoriaEnigmaValladolid = () => {
         <span class="font-bold text-xl text-brown"> Todos los enigmas: </span>
         <div class="flex flex-column flex align-items-center mt-2">
           <img
-            src="../assets/images/enigma/enigmaValladolid.jpg"
+            src="/images/enigma/enigmaValladolid.jpg"
             alt="Image"
             width="250px"
             @click="mostrarHistoriaEnigmaValladolid"

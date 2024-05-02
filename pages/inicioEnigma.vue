@@ -23,12 +23,7 @@ onMounted(() => {
     <TheHeaderEnigma />
     <ConfirmExit v-model:visible="visible" />
     <div class="mt-3 flex flex-column flex align-items-center">
-      <PImage
-        src="/_nuxt/assets/images/enigma/carta.png"
-        alt="Image"
-        width="300"
-        preview
-      />
+      <PImage src="/images/enigma/carta.png" alt="Image" width="300" preview />
       <div class="flex justify-content-center mt-4">
         <PButton
           rounded

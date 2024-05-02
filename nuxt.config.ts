@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ["nuxt-primevue", "@vee-validate/nuxt", "nuxt3-leaflet"],
+  modules: ["nuxt-primevue", "@vee-validate/nuxt", "nuxt3-leaflet", "@nuxt/image"],
   primevue: {
     components: {
       prefix: "P",
@@ -18,6 +18,6 @@ export default defineNuxtConfig({
     "primeflex/primeflex.css",
     "primeicons/primeicons.css",
     "primevue/resources/themes/saga-blue/theme.css",
-    "/assets/css/default.css",
+    "/css/default.css",
   ],
 });

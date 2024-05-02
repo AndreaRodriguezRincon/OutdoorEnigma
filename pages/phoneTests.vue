@@ -1,5 +1,5 @@
 <script setup>
-import { tests } from "~/assets/data";
+import { tests } from "~/data/data";
 const { query } = useRoute();
 const router = useRouter();
 const questionData = tests[query.question];
@@ -21,7 +21,8 @@ const visible = ref(false);
           <span class="text-3xl text-green flex justify-content-center"
             >¡ENHORABUENA!</span
           >
-          <span class="mt-2 text-base text-green flex justify-content-center"
+          <span
+            class="mt-2 text-base text-lightGreen flex justify-content-center"
             >Has recuperado el {{ questionData.index }} móvil</span
           >
         </template>
@@ -30,7 +31,7 @@ const visible = ref(false);
             <img
               :src="questionData.imagePhone"
               alt="Imagen móvil con letra"
-              width="125"
+              width="300"
             />
             <PButton
               rounded
@@ -68,6 +69,9 @@ const visible = ref(false);
 }
 .text-green {
   color: #5f6f52;
+}
+.text-lightGreen {
+  color: #a9b388;
 }
 .text-orange {
   color: #c4661f;
