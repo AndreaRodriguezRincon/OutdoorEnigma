@@ -1,14 +1,7 @@
 <script setup>
 import { tests } from "~/data/data";
 const { query } = useRoute();
-const router = useRouter();
 const questionData = tests[query.question];
-const nextTest = () => {
-  router.push({
-    path: "tests",
-    query: { question: questionData.urlQueryParamNextTest },
-  });
-};
 const visible = ref(false);
 </script>
 <template>
@@ -16,32 +9,7 @@ const visible = ref(false);
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
     <div class="flex justify-content-center">
-      <PCard class="mt-4 lg:w-6 border-round-3xl">
-        <template #title>
-          <span class="text-3xl text-green flex justify-content-center"
-            >¡ENHORABUENA!</span
-          >
-          <span
-            class="mt-2 text-base text-lightGreen flex justify-content-center"
-            >Has recuperado el {{ questionData.index }} móvil</span
-          >
-        </template>
-        <template #content>
-          <div class="flex flex-column flex align-items-center">
-            <img
-              :src="`${questionData.imagePhone}`"
-              alt="Imagen móvil con letra"
-              width="300"
-            />
-            <PButton
-              rounded
-              label="Continuar"
-              class="mt-4 bg-orange border-none shadow-3"
-              @click="nextTest"
-            />
-          </div>
-        </template>
-      </PCard>
+      <CardPhone :phone="questionData" class="mt-4 lg:w-6 border-round-3xl" />
     </div>
     <div>
       <PButton
