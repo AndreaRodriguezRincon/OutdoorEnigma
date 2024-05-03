@@ -37,8 +37,8 @@ const pad = (num) => {
   border-radius: 12px;
 }
 .timer {
-  border-top: 2px solid #a9b388;
-  border-bottom: 2px solid #a9b388;
+  border-top: 3px solid #a9b388;
+  border-bottom: 3px solid #a9b388;
 }
 
 .img-timer {

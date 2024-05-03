@@ -21,13 +21,13 @@ const checkAnswer = () => {
     <div class="ml-3 mr-3 mt-4 flex justify-content-center">
       <PCard class="mt-4 lg:w-4 border-round-3xl border-solid border-green-800">
         <template #title>
-          <span class="text-3xl text-green flex justify-content-center"
+          <span class="text-3xl text-orange flex justify-content-center"
             >¡PRUEBA FINAL!</span
           >
         </template>
         <template #content>
           <div class="flex flex-column flex align-items-center">
-            <Timekeeper class="mt-4" />
+            <Timekeeper class="mt-2" />
             <span class="mt-4 ml-3 mr-3 text-brown text-center"
               >Introduce la palabra formada con las letras proporcionadas tras
               superar cada una de las pruebas y recuperar los moviles.</span
