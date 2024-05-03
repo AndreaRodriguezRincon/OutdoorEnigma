@@ -1,16 +1,19 @@
 <script setup>
+import { actions } from "../composables/timerStore";
 const router = useRouter();
 const activeIndex = ref(11);
 const visible = ref(false);
-const value = ref(null);
+const answer = ref(null);
 const correctAnswer = ref("VALLADOLID");
 const isCorrectAnswer = ref(null);
 const checkAnswer = () => {
   const correctAnswer = "VALLADOLID";
-  if (value.value === correctAnswer) {
-    router.push("/pucelano");
+  if (answer.value === correctAnswer) {
+    actions.stopTimer();
+    router.push("/winnerEnigma");
   } else {
     isCorrectAnswer.value = false;
+    answer.value = "";
   }
 };
 </script>
@@ -32,7 +35,7 @@ const checkAnswer = () => {
               >Introduce la palabra formada con las letras proporcionadas tras
               superar cada una de las pruebas y recuperar los moviles.</span
             >
-            <PInputOtp v-model="value" class="mt-4" :length="10">
+            <PInputOtp v-model="answer" class="mt-4" :length="10">
               <template #default="{ attrs, events }">
                 <input
                   type="text"
@@ -42,7 +45,9 @@ const checkAnswer = () => {
                 />
               </template>
             </PInputOtp>
-            <span v-if="isCorrectAnswer === false">* Respuesta incorrecta</span>
+            <span v-if="isCorrectAnswer === false" class="mt-4 text-orange"
+              >* Respuesta incorrecta</span
+            >
             <PButton
               rounded
               label="Comprobar"
@@ -71,7 +76,6 @@ const checkAnswer = () => {
     rgba(169, 179, 136, 100%),
     rgba(201, 137, 88, 30%)
   );
-  height: 100vh;
 }
 
 .text-brown {

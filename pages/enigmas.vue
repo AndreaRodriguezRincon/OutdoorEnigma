@@ -15,7 +15,7 @@ const mostrarHistoriaEnigmaValladolid = () => {
           <img
             src="/images/enigma/enigmaValladolid.jpg"
             alt="Image"
-            width="250px"
+            width="350px"
             @click="mostrarHistoriaEnigmaValladolid"
             class="imgEnigmaValladolid mt-2 shadow-3"
           />
