@@ -23,7 +23,7 @@ const visible = ref(false);
       <img
         src="/images/enigma/pucelano.png"
         alt="Pucelano"
-        width="120"
+        width="100"
         class="mt-2"
       />
       <span class="text-brown">Hola, ¿necesitas mi ayuda?</span>
