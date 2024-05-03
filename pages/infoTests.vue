@@ -1,14 +1,7 @@
 <script setup>
 import { tests } from "~/data/data";
 const { query } = useRoute();
-const router = useRouter();
 const questionData = tests[query.question];
-const showPhone = () => {
-  router.push({
-    path: "phoneTests",
-    query: { question: questionData.urlQueryParam },
-  });
-};
 const visible = ref(false);
 </script>
 <template>
@@ -16,33 +9,7 @@ const visible = ref(false);
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
     <div class="ml-3 mr-3 flex justify-content-center">
-      <PCard class="mt-4 lg:w-6 border-round-3xl">
-        <template #title>
-          <span class="text-3xl text-green flex justify-content-center"
-            >¡CORRECTO!</span
-          >
-        </template>
-        <template #content>
-          <div class="flex flex-column flex align-items-center">
-            <div class="flex flex-row gap-4">
-              <img
-                :src="questionData.imageInfoPath"
-                alt="Imagen información prueba"
-                width="125"
-              />
-              <span class="ml-3 mr-3 text-brown text-justify">
-                {{ questionData.textInfo }}
-              </span>
-            </div>
-            <PButton
-              rounded
-              label="Continuar"
-              class="mt-4 bg-orange border-none shadow-3"
-              @click="showPhone"
-            />
-          </div>
-        </template>
-      </PCard>
+      <CardInfo :info="questionData" class="mt-4 lg:w-6 border-round-3xl" />
     </div>
     <div>
       <PButton
