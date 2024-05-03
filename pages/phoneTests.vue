@@ -8,8 +8,8 @@ const visible = ref(false);
   <div class="enigmas">
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
-    <div class="flex justify-content-center">
-      <CardPhone :phone="questionData" class="mt-4 lg:w-6 border-round-3xl" />
+    <div class="ml-3 mr-3 flex justify-content-center">
+      <CardPhone :phone="questionData" class="mt-4 border-round-3xl" />
     </div>
     <div>
       <PButton

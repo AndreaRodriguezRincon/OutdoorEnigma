@@ -13,7 +13,9 @@ const visible = ref(false);
     <TheHeaderEnigma />
     <ConfirmExit v-model:visible="visible" />
     <div class="ml-3 mr-3 flex justify-content-center">
-      <PCard class="lg:w-6 mt-3 border-green border-round-3xl shadow-3">
+      <PCard
+        class="lg:w-4 mt-3 border-green border-round-3xl border-solid border-green-800 shadow-3"
+      >
         <template #content>
           <img
             src="/images/enigma/pucelano.png"

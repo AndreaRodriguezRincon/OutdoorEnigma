@@ -20,3 +20,17 @@ body {
 .p-inputtext:enabled:focus {
   border-color: #a9b388;
 }
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  color: #5f6f52;
+  border: 1px solid #e2eac8;
+  background-color: white;
+}
+.p-accordion .p-accordion-content {
+  border: 1px solid #e2eac8;
+  background-color: #f2f7e4;
+  text-align: center;
+}
+.border-green-800 {
+  border-color: #5f6f52 !important;
+}

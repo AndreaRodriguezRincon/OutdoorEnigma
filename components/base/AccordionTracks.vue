@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { actions } from "../composables/timerStore";
 
 const props = defineProps({
   pucelano: {
@@ -36,13 +37,38 @@ const tabs = ref([
 ]);
 
 const mostrarMensaje = (event) => {
-  console.log("Se hizo clic en el tab:", event.index);
+  switch (event.index) {
+    case 0:
+      if (!props.pucelano.clue1.addTime) {
+        props.pucelano.clue1.addTime = true;
+        actions.addMinutes(1);
+      }
+      break;
+    case 1:
+      if (!props.pucelano.clue2.addTime) {
+        props.pucelano.clue2.addTime = true;
+        actions.addMinutes(2);
+      }
+      break;
+    case 2:
+      if (!props.pucelano.clue3.addTime) {
+        props.pucelano.clue3.addTime = true;
+        actions.addMinutes(3);
+      }
+      break;
+    case 3:
+      if (!props.pucelano.answer.addTime) {
+        props.pucelano.answer.addTime = true;
+        actions.addMinutes(5);
+      }
+      break;
+  }
 };
 </script>
 <template>
   <PAccordion
     :activeIndex="null"
-    class="mt-4 "
+    class="mt-4 border-0"
     @tab-click="mostrarMensaje"
   >
     <PAccordionTab
@@ -51,11 +77,16 @@ const mostrarMensaje = (event) => {
       :header="tab.title"
     >
       <template v-if="!tab.imagen">
-        <p class="m-0">{{ tab.content }}</p>
+        <span class="text-brown">{{ tab.content }}</span>
       </template>
       <template v-else>
-        <img :src="tab.imagePath" alt="Imagen pista" width="250" class="flex align-items-center "/>
+        <img :src="tab.imagePath" alt="Imagen pista" width="250" />
       </template>
     </PAccordionTab>
   </PAccordion>
 </template>
+<style scoped>
+.text-brown {
+  color: #783d19;
+}
+</style>

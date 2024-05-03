@@ -19,13 +19,20 @@ const visible = ref(false);
       },
     }"
   >
-    <img
-      src="/images/enigma/pucelano.png"
-      alt="Pucelano"
-      width="120"
-      class="mt-2"
-    />
-    <span class="text-brown">Hola, ¿necesitas mi ayuda?</span>
+    <div class="flex align-items-center gap-4">
+      <img
+        src="/images/enigma/pucelano.png"
+        alt="Pucelano"
+        width="120"
+        class="mt-2"
+      />
+      <span class="text-brown">Hola, ¿necesitas mi ayuda?</span>
+    </div>
     <AccordionTracks :pucelano="props.pucelano" />
   </PDialog>
 </template>
+<style scoped>
+.text-brown {
+  color: #783d19;
+}
+</style>

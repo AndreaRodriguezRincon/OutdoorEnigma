@@ -7,14 +7,20 @@ const props = defineProps({
   },
 });
 const nextTest = () => {
-  router.push({
-    path: "tests",
-    query: { question: props.phone.urlQueryParamNextTest },
-  });
+  if (props.phone.urlQueryParam === "test10") {
+    router.push("/finalTest");
+  } else {
+    router.push({
+      path: "tests",
+      query: { question: props.phone.urlQueryParamNextTest },
+    });
+  }
 };
 </script>
 <template>
-  <PCard class="mt-4 lg:w-6 border-round-3xl">
+  <PCard
+    class="mt-4 w-full lg:w-4 border-round-3xl border-solid border-green-800"
+  >
     <template #title>
       <span class="text-3xl text-green flex justify-content-center"
         >¡ENHORABUENA!</span

@@ -25,7 +25,9 @@ const checkAnswer = () => {
 console.log(answer.value);
 </script>
 <template>
-  <PCard class="mt-4 w-full lg:w-6 border-green border-round-3xl">
+  <PCard
+    class="mt-4 w-full lg:w-4 border-round-3xl border-solid border-green-800 shadow-3"
+  >
     <template #content>
       <div class="flex flex-column flex align-items-center">
         <span class="mr-2 text-center text-brown">
@@ -42,21 +44,21 @@ console.log(answer.value);
             v-if="props.test.type === 'input'"
             id="answer"
             v-model="answer"
-            class="border-round-xl border-2 shadow-3"
+            class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
           <PInputMask
             v-else-if="props.test.type === 'code'"
             id="answer"
             v-model="answer"
             mask="99-9"
-            class="border-round-xl border-2 shadow-3"
+            class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
           <PInputMask
             v-else
             id="answer"
             v-model="answer"
             mask="99-99-9999"
-            class="border-round-xl border-2 shadow-3"
+            class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
           <label for="answer" class="text-brown">Respuesta</label>
         </PFloatLabel>

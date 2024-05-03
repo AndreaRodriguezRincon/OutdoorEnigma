@@ -1,6 +1,4 @@
-<script>
-const visible = ref(false);
-</script>
+<script></script>
 <template>
   <div class="mt-4 ml-4">
     <img src="/images/enigma/pucelano.png" alt="Pucelano" width="120" />

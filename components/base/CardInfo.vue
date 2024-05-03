@@ -15,7 +15,7 @@ const showPhone = () => {
 };
 </script>
 <template>
-  <PCard class="mt-4 lg:w-6 border-round-3xl">
+  <PCard class="mt-4 lg:w-4 border-round-3xl border-solid border-green-800">
     <template #title>
       <span class="text-3xl text-green flex justify-content-center"
         >¡CORRECTO!</span
@@ -23,13 +23,14 @@ const showPhone = () => {
     </template>
     <template #content>
       <div class="flex flex-column flex align-items-center">
-        <div class="flex flex-row gap-2 lg:gap-4">
+        <div class="text-justify">
           <img
             :src="props.info.imageInfoPath"
             alt="Imagen información prueba"
             height="250"
+            class="img-float mr-4"
           />
-          <span class="ml-3 mr-3 text-brown text-justify">
+          <span class="text-brown">
             {{ props.info.textInfo }}
           </span>
         </div>
@@ -52,5 +53,13 @@ const showPhone = () => {
 }
 .bg-orange {
   background-color: #c4661f;
+}
+.img-float {
+  float: left;
+}
+.text-justify {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 </style>

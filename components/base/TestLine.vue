@@ -15,7 +15,7 @@ const letras = ref([
   { label: "A" },
   { label: "L" },
   { label: "D" },
-  { label: "v" },
+  { label: "V" },
 ]);
 </script>
 <template>

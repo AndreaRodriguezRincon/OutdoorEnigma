@@ -23,7 +23,7 @@ onMounted(() => {
     <TheHeaderEnigma />
     <ConfirmExit v-model:visible="visible" />
     <div class="mt-3 flex flex-column flex align-items-center">
-      <PImage src="/images/enigma/carta.png" alt="Image" width="300" preview />
+      <PImage src="/images/enigma/carta.png" alt="Image" width="350" preview />
       <div class="flex justify-content-center mt-4">
         <PButton
           rounded
@@ -39,7 +39,7 @@ onMounted(() => {
         text
         icon="pi pi-arrow-left"
         label="Salir"
-        class="text-orange mt-6 mb-4 ml-2 lg:ml-4 hover:bg-white focus:bg-white"
+        class="text-orange mt-6 ml-2 lg:ml-4 hover:bg-white focus:bg-white"
         @click="visible = true"
       />
     </div>

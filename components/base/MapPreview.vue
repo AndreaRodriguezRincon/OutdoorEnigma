@@ -7,7 +7,7 @@ const props = defineProps({
 const visible = ref(false);
 </script>
 <template>
-  <div class="flex flex-column mt-4 mr-4 mb-4">
+  <div class="flex flex-column mt-4 mr-4 lg:mr-8">
     <img
       src="/images/enigma/mapaVistaPrevia.png"
       alt="Vista previa mapa"
@@ -17,7 +17,7 @@ const visible = ref(false);
       {{ props.place.place }}
     </span>
   </div>
-</template>
+</template>s
 <style scoped>
 .text-brown {
   color: #783d19;

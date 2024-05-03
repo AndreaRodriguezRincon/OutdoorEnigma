@@ -9,7 +9,7 @@ const visible = ref(false);
     <ConfirmExit v-model:visible="visible" />
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
     <div class="ml-3 mr-3 flex justify-content-center">
-      <CardInfo :info="questionData" class="mt-4 lg:w-6 border-round-3xl" />
+      <CardInfo :info="questionData" class="mt-4 border-round-3xl" />
     </div>
     <div>
       <PButton
@@ -29,7 +29,6 @@ const visible = ref(false);
     rgba(169, 179, 136, 100%),
     rgba(201, 137, 88, 30%)
   );
-  height: 100vh;
 }
 
 .text-brown {

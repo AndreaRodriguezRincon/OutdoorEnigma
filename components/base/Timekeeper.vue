@@ -1,38 +1,51 @@
 <script setup>
 import { computed } from "vue";
+import { state, actions } from "../composables/timerStore";
 
-const time = ref(0);
+onMounted(() => {
+  actions.startTimer();
+});
+
+onUnmounted(() => {
+  actions.stopTimer();
+});
 
 const formattedTime = computed(() => {
-  const hours = Math.floor(time.value / 3600);
-  const minutes = Math.floor((time.value % 3600) / 60);
-  const seconds = time.value % 60;
+  const hours = Math.floor(state.time / 3600);
+  const minutes = Math.floor((state.time % 3600) / 60);
+  const seconds = state.time % 60;
   return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 });
 
 const pad = (num) => {
   return num.toString().padStart(2, "0");
 };
-
-const tick = () => {
-  time.value++;
-};
-
-onMounted(() => {
-  setInterval(tick, 1000);
-});
-
-const addMinute = (minutes) => {
-  time.value += minutes * 60;
-};
 </script>
 
 <template>
-  <div>
-    <span class="text-3xl text-white">{{ formattedTime }}</span>
-    <button @click="addMinute(1)">+1 minuto</button>
-    <button @click="addMinute(2)">+2 minutos</button>
-    <button @click="addMinute(3)">+3 minutos</button>
-    <button @click="addMinute(5)">+5 minutos</button>
+  <div class="block-timer">
+    <img src="/images/icons/reloj.png" class="img-timer" alt="Cronómetro" />
+
+    <span class="text-3xl text-white timer">{{ formattedTime }}</span>
   </div>
 </template>
+<style scoped>
+.block-timer {
+  position: relative;
+  background-color: #5f6f52;
+  padding: 8px 32px;
+  border-radius: 12px;
+}
+.timer {
+  border-top: 2px solid #a9b388;
+  border-bottom: 2px solid #a9b388;
+}
+
+.img-timer {
+  position: absolute;
+  top: -27px;
+  left: -26px;
+  width: 60px;
+  height: 60px;
+}
+</style>
