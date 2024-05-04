@@ -10,10 +10,10 @@ export const tests = {
     imagePath: "/images/tests/test1.png",
     answer: "Conde Pedro Ansurez",
     place: "Plaza Mayor",
-    imageInfoPath: "/images/info/test1.jpg",
+    imageInfoPath: "/images/tests/info/test1.jpg",
     textInfo:
       "El Conde Ansúrez, figura histórica destacada en la historia de España, emerge como un símbolo de valentía, astucia y lealtad en los turbulentos tiempos de la Reconquista. Su legado se enraíza en la Castilla medieval, donde su influencia política y militar marcó un hito en la consolidación del reino. Nacido en el siglo X en la región de León, Pedro Ansúrez, más conocido como el Conde Ansúrez, se erigió como un líder indiscutible durante una época caracterizada por las luchas entre cristianos y musulmanes por el control de la península ibérica. Hombre de gran inteligencia y destreza militar, Ansúrez dedicó su vida a defender y expandir los territorios cristianos frente al avance musulmán. Uno de los momentos más destacados en la vida del Conde Ansúrez fue su participación en la batalla de Simancas en el año 939, donde las fuerzas cristianas lideradas por él lograron una victoria crucial sobre el califato de Córdoba. Esta batalla no solo consolidó su posición como un líder militar respetado, sino que también contribuyó significativamente a la expansión del reino de León.",
-    imagePhone: "images/phone/phoneL1.png",
+    imagePhone: "images/tests/phone/phoneL1.png",
     index: "primer",
     pucelano: {
       clue1: {
