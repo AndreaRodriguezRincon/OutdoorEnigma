@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  middleware: "info-tests-url",
+});
 import { tests } from "~/data/data";
 const { query } = useRoute();
 const questionData = tests[query.question];

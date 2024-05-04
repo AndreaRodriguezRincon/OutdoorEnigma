@@ -8,7 +8,9 @@ const exitEnigma = () => {
   <div class="enigmas">
     <TheHeaderEnigma />
     <div class="ml-3 mr-3 mt-4 flex justify-content-center">
-      <PCard class="mt-4 lg:w-4 border-round-3xl border-solid border-green-800">
+      <PCard
+        class="mt-4 w-full lg:w-4 border-round-3xl border-solid border-green-800"
+      >
         <template #title>
           <span class="text-3xl text-green flex justify-content-center"
             >¡ENHORABUENA!</span

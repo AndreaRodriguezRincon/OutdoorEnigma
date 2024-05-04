@@ -34,3 +34,27 @@ body {
 .border-green-800 {
   border-color: #5f6f52 !important;
 }
+
+/* Tamaño de la línea TimeLine */
+.p-steps .p-steps-item:first-of-type:before {
+  left: 50%;
+  width: 50%;
+}
+
+.p-steps .p-steps-item:last-of-type:before {
+  width: 50%;
+}
+
+/* X Cerrar dialogos */
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: #783d19;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+  color: #c4661f;
+  background: #ffffff;
+}
+
+/* Menu */
+.p-menubar.p-menubar-mobile .p-menubar-button:focus {
+  box-shadow: none;
+}
