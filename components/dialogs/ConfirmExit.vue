@@ -19,9 +19,7 @@ const salirJuego = () => {
       },
     }"
   >
-    <span class="text-brown"
-      >¿Estás seguro que deseas abandonar el enigma?</span
-    >
+    <span class="text-brown">¿Quieres abandonar el enigma?</span>
     <div class="flex justify-content-center mt-4 gap-3">
       <PButton
         rounded

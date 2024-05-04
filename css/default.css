@@ -53,6 +53,9 @@ body {
   color: #c4661f;
   background: #ffffff;
 }
+.p-dialog .p-dialog-header {
+  border-bottom: none;
+}
 
 /* Menu */
 .p-menubar.p-menubar-mobile .p-menubar-button:focus {

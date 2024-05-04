@@ -17,7 +17,7 @@ const visibleMap = ref(false);
       class="w-10 lg:w-4"
     />
     <DialogMap v-model:visible="visibleMap" class="w-10 lg:w-4" />
-    <ConfirmExit v-model:visible="visible" class="w-10 lg:w-6" />
+    <ConfirmExit v-model:visible="visible"/>
     <TheHeaderEnigmaTest :activeIndex="questionData.activeIndex" />
     <div class="ml-3 mr-3 flex flex-column flex align-items-center">
       <div class="flex flex-row gap-6 flex align-items-center">
