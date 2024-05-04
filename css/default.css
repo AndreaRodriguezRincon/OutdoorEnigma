@@ -54,7 +54,7 @@ body {
   background: #ffffff;
 }
 .p-dialog .p-dialog-header {
-  border-bottom: none;
+  border: white;
 }
 
 /* Menu */

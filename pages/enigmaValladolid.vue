@@ -44,14 +44,13 @@ const mostrarPucelano = () => {
         <span class="mt-2 text-brown text-justify md:w-5">
           Gaby decide celebrar su 30 cumpleaños en la ciudad de Valladolid en
           compañía de sus amigos más cercanos. Después de una noche repleta de
-          risas, cena, fiesta, fotos…, al regresar exhaustos al hotel para
-          descansar, se percatan de que todos sus móviles han desaparecido.
-          Deciden entonces poner fin a la noche y dirigirse a descansar para
-          acudir temprano a la policía al día siguiente e informar del
-          incidente. Sin embargo, a la mañana siguiente una nota bajo la puerta
-          de la habitación de Gaby le indica que si quiere recuperar su móvil y
-          el de sus amigos. deberá acudir a la siguiente dirección: Plaza Mayor
-          de Valladolid.
+          risas, cena, fiesta, fotos…, al regresar exhaustos al hotel, se
+          percatan de que todos sus móviles han desaparecido. Deciden entonces
+          poner fin a la noche y dirigirse a descansar para acudir temprano a la
+          policía al día siguiente e informar del incidente. Sin embargo, a la
+          mañana siguiente una nota bajo la puerta de la habitación de Gaby le
+          indica que si quiere recuperar su móvil y el de sus amigos, deberá
+          acudir a la siguiente dirección: Plaza Mayor de Valladolid.
         </span>
       </div>
       <div class="flex gap-5 mt-5">
