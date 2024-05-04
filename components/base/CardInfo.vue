@@ -27,7 +27,7 @@ const showPhone = () => {
           <img
             :src="props.info.imageInfoPath"
             alt="Imagen información prueba"
-            height="250"
+            height="200"
             class="img-float mr-4"
           />
           <span class="text-brown">

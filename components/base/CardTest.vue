@@ -10,19 +10,27 @@ const answer = ref("");
 const correctAnswer = ref(null);
 const visible = ref(false);
 const checkAnswer = () => {
-  console.log(answer.value);
-  if (props.test.answer === answer.value) {
-    correctAnswer.value = true;
+  const normalizedAnswer = answer.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+  if (Array.isArray(props.test.answer)) {
+    correctAnswer.value = props.test.answer.some(
+      (option) => option === normalizedAnswer
+    );
+  } else {
+    correctAnswer.value = props.test.answer === normalizedAnswer;
+  }
+
+  if (correctAnswer.value) {
     router.push({
       path: "infoTests",
       query: { question: props.test.urlQueryParam },
     });
   } else {
-    correctAnswer.value = false;
     answer.value = "";
   }
 };
-console.log(answer.value);
 </script>
 <template>
   <PCard
