@@ -6,13 +6,6 @@
 body {
   margin: 0;
 }
-.stepsDiv .p-disabled,
-.stepsDiv .p-component:disabled {
-  opacity: 1;
-}
-.stepsDiv .p-steps .p-steps-item:before {
-  border-top: 2px solid #a9b388;
-}
 
 .p-inputtext:enabled:hover {
   border-color: #a9b388;
@@ -35,12 +28,19 @@ body {
   border-color: #5f6f52 !important;
 }
 
-/* Tamaño de la línea TimeLine */
+/*TimeLine */
 .p-steps .p-steps-item:first-of-type:before {
   left: 50%;
   width: 50%;
 }
 
+.stepsDiv .p-disabled,
+.stepsDiv .p-component:disabled {
+  opacity: 1;
+}
+.stepsDiv .p-steps .p-steps-item:before {
+  border-top: 2px solid #a9b388;
+}
 .p-steps .p-steps-item:last-of-type:before {
   width: 50%;
 }
