@@ -8,6 +8,16 @@ const questionData = tests[query.question];
 const visible = ref(false);
 const visiblePucelano = ref(false);
 const visibleMap = ref(false);
+onMounted(() => {
+  const script1 = document.createElement("script");
+  script1.src = "https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js";
+  script1.crossOrigin = "";
+  document.body.appendChild(script1);
+
+  const script2 = document.createElement("script");
+  script2.src = "https://releases.targomo.com/leaflet/latest-full.min.js";
+  document.body.appendChild(script2);
+});
 </script>
 <template>
   <div class="enigmas">

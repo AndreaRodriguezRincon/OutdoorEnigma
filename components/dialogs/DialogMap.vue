@@ -19,9 +19,6 @@ const visible = ref(false);
       },
     }"
   >
-    <Map
-      class="mt-4 flex justify-content-center"
-      :localizacion="localizacion"
-    />
+    <Map class="mt-4 flex align-items-center" :localizacion="localizacion" />
   </PDialog>
 </template>

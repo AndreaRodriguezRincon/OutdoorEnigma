@@ -188,7 +188,7 @@ export const tests = {
     image: true,
     imagePath: "/images/tests/test5.jpg",
     answer: ["flor de lis", "lis", "la flor de lis"],
-    place: "Museo Nacional de Escultura",
+    place: "Colegio de San Gregorio",
     imageInfoPath: "/images/info/test5.jpg",
     textInfo:
       "El colegio de San Gregorio de Valladolid es la sede principal del Museo Nacional de Escultura. En esta fascinante fachada, hubo quien eligió la búsqueda de un caracol como un símbolo local para probar la agudeza visual y ser recompensado por ello con buen augurio para aprobar los estudios. El animal aparece castigado por dos figuras de niños colocados a los lados, uno que se dispone a atizarle con un garrote y otro que intenta atravesarle con una lanza. De modo que el caracol adquiere el simbolismo de la lucha contra la pereza, identificando la lentitud del caracol con la vagancia que debe ser combatida por los estudiantes.",
@@ -276,7 +276,7 @@ export const tests = {
     image: true,
     imagePath: "/images/tests/test7.jpg",
     answer: "no me quiere",
-    place: "Iglesia de Santa María de la Antigua",
+    place: "Iglesia de la Antigua",
     imageInfoPath: "/images/info/test7.jpg",
     textInfo:
       "La Iglesia de Santa María de la Antigua, conocida entre los vallisoletanos como la iglesia de ‘La Antigua’, presume de ser una de las joyas del románico de Castilla y León gracias a su esbelta torre con más de 55 metros de altura. Es el único elemento del siglo XIII, junto con el pórtico norte, pues el resto del templo es de estilo gótico, ya del siglo XIV. Su origen no está claro para los historiadores, si bien se apunta a que podría haber sido una parroquia para uso del conde Ansúrez en el siglo XI. La torre conserva aún su remate en forma de flecha, de un complejo sistema constructivo poco habitual en la región. El entorno está cargado de leyenda, la cruz indica el lugar donde hubo un cementerio al que se le ha atribuido un milagro: apareció el cuerpo de un niño con vestimenta romana en perfecto estado, se dice que por la arena que fue traída de Tierra Santa.",
@@ -365,7 +365,7 @@ export const tests = {
     image: true,
     imagePath: "/images/tests/test9.png",
     answer: "4",
-    place: "Museo de la Academia de Caballería",
+    place: "Academia de Caballería",
     imageInfoPath: "/images/info/test9.jpg",
     textInfo:
       "La Academia de Cabellería se instala en Valladolid en el año 1852 aprovechando un edificio octogonal, construido en 1847 para servir de presidio. En 1915 se incendia y entre 1921-27 se edifica el actual. Actualmente es museo y entre sus fondos se encuentran pinturas, armas, estandartes, una colección de soldados de plomo, trofeos, fotografías, sillas de montar…  El edificio tiene planta en forma de U y la fachada principal está articulada por tres torres. En ella están los escudos con las cruces de las órdenes militares de Alcántara, Santiago, Calatrava y Montesa. El monumento al escuadrón de los jinetes cazadores de Alcántara situado delante de la entrada de la Academia, conmemora el heroísmo del regimiento de Alcántara en la Campaña de Marruecos (1921). Los soldados que forman el conjunto escultórico van vestidos con diferentes uniformes de la Caballería Española, desde los de la Caballería en Flandes hasta los utilizados en la Campaña de Marruecos.",
