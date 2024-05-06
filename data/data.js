@@ -15,6 +15,8 @@ export const tests = {
       "El Conde Pedro Ansúrez, una figura clave en la historia de Valladolid, es recordado por sus contribuciones a la ciudad. Se le atribuye la fundación de Valladolid en el año 1072, por encargo del rey Alfonso VI. Ansúrez, noble castellano, emprendió la tarea de repoblar y fortificar la región. Su visión y liderazgo fueron fundamentales en el desarrollo urbano de la ciudad. Ansúrez atrajo colonos y otorgó privilegios a los habitantes para fomentar su establecimiento en la región. Además, construyó fortificaciones que garantizaron la protección de Valladolid ante posibles amenazas externas. Como leal vasallo de la corona castellana, Ansúrez brindó apoyo militar y político al rey Alfonso VI, participando activamente en sus campañas militares y contribuyendo a la consolidación del reino de Castilla. El legado del Conde Pedro Ansúrez perdura en la historia de Valladolid, siendo reconocido como el visionario fundador y el impulsor del desarrollo inicial de una ciudad. ",
     imagePhone: "images/phone/phoneL1.png",
     index: "primer",
+    lat: 41.65198,
+    lng: -4.72854,
     pucelano: {
       clue1: {
         text: "No mires en las fachadas.",
@@ -58,6 +60,8 @@ export const tests = {
       "En esta calle tuvo inicio el devastador incendio del 21 de septiembre de 1561, cuyo origen fue en la casa del platero de la ciudad. La fuerza del viento propagó las llamas en todas direcciones, dificultando su extinción y prolongando el incendio por 50 horas. El desastre terminó con la pérdida de entre 3 y 6 vidas, y la destrucción de al menos 440 hogares, incluida la emblemática plaza del Mercado, emplazamiento de la actual Plaza Mayor de la ciudad.  La catástrofe fue paliada por Felipe II, cuya intervención marcó el comienzo de la etapa de reconstrucción de la ciudad, incluyendo la configuración de la Plaza Mayor, considerada como la primera plaza regular de España. Al final de esta calle, junto al cruce con la calle Macías Picavea, se encuentra una de las escasas viviendas que lograron resistir el fuego del gran incendio, siendo considerada la vivienda más antigua de la ciudad.",
     imagePhone: "/images/phone/phoneI.png",
     index: "segundo",
+    lat: 41.65316,
+    lng: -4.72678,
     pucelano: {
       clue1: {
         text: "Fíjate en el suelo.",
@@ -101,6 +105,8 @@ export const tests = {
       "Para conocer el origen de la Plaza del Viejo Coso hay que remontarse al siglo XIX, cuando esta plaza de planta octogonal fue la primera plaza de toros de Valladolid, siendo una de las pocas plazas de toros octogonales de España. En la década de los 80 la Plaza del Viejo Coso fue también un cuartel de la Guardia Civil. Hoy en día, el ruedo ha sido sustituido por un parque y los antiguos palcos han sido reformados para acoger viviendas. La singularidad de la plaza del Viejo Coso, no pasa desapercibida y es que se ha convertido, a lo largo de su historia, en escenario de rodaje de varias películas y series. Voy a pasármelo bien, de David Serrano; Caminos de Tiza, de José Luis Pérez Tristán o Memento Mori, la serie basada en la novela del escritor vallisoletano César Pérez Gellida, son algunos de los títulos en los que se puede reconocer este escenario único.",
     imagePhone: "/images/phone/phoneL2.png",
     index: "tercer",
+    lat: 41.65675,
+    lng: -4.72832,
     pucelano: {
       clue1: {
         text: "Soy una estructura curva que se utiliza para soportar peso y distribuir cargas de manera uniforme. ",
@@ -143,6 +149,8 @@ export const tests = {
       "Felipe II nació el 27 de mayo en el Palacio de Pimentel, donde se hospedaban en su visita a la ciudad el emperador Carlos y la emperatriz Isabel. Se dice que la norma obligaba a celebrar los bautizos en la parroquia a la que perteneciera el edificio en el que tuviera lugar el alumbramiento, y en este caso correspondía que Felipe II debía ser bautizado en la parroquia de San Martín. Sin embargo, los progenitores no estaban de acuerdo en oficiar tan noble bautizo en el humilde templo, cuando justo al lado se encuentra la majestuosa Iglesia de San Pablo. El emperador utilizó su astucia para justificar que, aunque la entrada principal de la casa pertenecía a la parroquia de San Martín, no ocurría lo mismo con la ventana. Entonces, cortó las rejas de la ventana para que el infante pudiera salir y así convertirla en la entrada de la casa. La cadena que cierra la ventana permanece como un recuerdo de aquel acontecimiento que ocurrió hace casi cinco siglos.",
     imagePhone: "/images/phone/phoneO.png",
     index: "cuarto",
+    lat: 41.65696,
+    lng: -4.72465,
     pucelano: {
       clue1: {
         text: "Bajo los escudos.",
@@ -186,6 +194,8 @@ export const tests = {
       "El colegio de San Gregorio de Valladolid es la sede principal del Museo Nacional de Escultura. En esta fascinante fachada, hubo quien eligió la búsqueda de un caracol como un símbolo local para probar la agudeza visual y ser recompensado por ello con buen augurio para aprobar los estudios. El animal aparece castigado por dos figuras de niños colocados a los lados, uno que se dispone a atizarle con un garrote y otro que intenta atravesarle con una lanza. De modo que el caracol adquiere el simbolismo de la lucha contra la pereza, identificando la lentitud del caracol con la vagancia que debe ser combatida por los estudiantes.",
     imagePhone: "/images/phone/phoneA1.png",
     index: "quinto",
+    lat: 41.65718,
+    lng: -4.72372,
     pucelano: {
       clue1: {
         text: "Representa nobleza, poder, monarquía.",
@@ -228,6 +238,8 @@ export const tests = {
       "De sobra es conocida la fascinación que José Zorrilla sentía por lo paranormal. El gusto de Zorrilla por el misterio y lo esotérico nace en Valladolid. El poeta pasó su infancia en lo que hoy es la Casa-Museo de José Zorrilla. Aquí se encontró con el fantasma de su abuela Nicolasa y vio al mismísimo diablo. Una mañana de invierno con una espesa niebla, cuando el todavía niño se asomaba al balcón de la sala principal, escuchó en la calle el sonido de los cascos de un caballo que trotaba y el pequeño identificó el rostro del jinete con el del diablo y relató su visión al personal que trabajaba en el domicilio y a toda la familia. Pero probablemente el fenómeno fantástico más conocido sobre José Zorrilla y su casa natal sea el encuentro con su fallecida abuela Nicolasa en la habitación de invitados en la que el niño solía jugar. Tras observar la puerta de la alcoba entreabierta, se asomó y encontró en ella a una mujer de avanzada edad que le pidió que se acercara y le confesó que era su familiar, la cual había muerto antes incluso de que el escritor naciera.",
     imagePhone: "/images/phone/phoneD1.png",
     index: "sexto",
+    lat: 41.65618,
+    lng: -4.72335,
     pucelano: {
       clue1: {
         text: "Juega con las fechas que no se muestran.",
@@ -270,6 +282,8 @@ export const tests = {
       "La Iglesia de Santa María de la Antigua, conocida entre los vallisoletanos como la iglesia de ‘La Antigua’, presume de ser una de las joyas del románico de Castilla y León gracias a su esbelta torre con más de 55 metros de altura. Es el único elemento del siglo XIII, junto con el pórtico norte, pues el resto del templo es de estilo gótico, ya del siglo XIV. Su origen no está claro para los historiadores, si bien se apunta a que podría haber sido una parroquia para uso del conde Ansúrez en el siglo XI. La torre conserva aún su remate en forma de flecha, de un complejo sistema constructivo poco habitual en la región. El entorno está cargado de leyenda, la cruz indica el lugar donde hubo un cementerio al que se le ha atribuido un milagro: apareció el cuerpo de un niño con vestimenta romana en perfecto estado, se dice que por la arena que fue traída de Tierra Santa.",
     imagePhone: "/images/phone/phoneA2.png",
     index: "septimo",
+    lat: 41.65389,
+    lng: -4.72278,
     pucelano: {
       clue1: {
         text: "Comienza por me quiere.",
@@ -313,6 +327,8 @@ export const tests = {
       "En esta casa habitó el ilustre escritor don Miguel de Cervantes de 1603 a 1606, mientras residió en Valladolid. Es la única residencia del escritor que se conserva original en España. Mientras vivía en ella gestionó la publicación de la primera parte de su Quijote y redactó su prólogo, comenzó la segunda parte de su gran novela y se cree que escribió algunas de sus Novelas Ejemplares dadas las numerosas referencias de la ciudad que aparecen en El casamiento engañoso o El licenciado vidriera. Igualmente fue aquí donde el escritor se vio envuelto, aunque en calidad de testigo, en el desafortunado asesinato del caballero de Santiago Gaspar de Ezpeleta; razón por la que tuvo que pisar la cárcel vallisoletana. ",
     imagePhone: "/images/phone/phoneL1.png",
     index: "octavo",
+    lat: 41.64841,
+    lng: -4.72707,
     pucelano: {
       clue1: {
         text: "Admira el camino que hacia Cervantes al salir de Casa dirección la Plaza Zorrilla.",
@@ -355,6 +371,8 @@ export const tests = {
       "La Academia de Cabellería se instala en Valladolid en el año 1852 aprovechando un edificio octogonal, construido en 1847 para servir de presidio. En 1915 se incendia y entre 1921-27 se edifica el actual. Actualmente es museo y entre sus fondos se encuentran pinturas, armas, estandartes, una colección de soldados de plomo, trofeos, fotografías, sillas de montar…  El edificio tiene planta en forma de U y la fachada principal está articulada por tres torres. En ella están los escudos con las cruces de las órdenes militares de Alcántara, Santiago, Calatrava y Montesa. El monumento al escuadrón de los jinetes cazadores de Alcántara situado delante de la entrada de la Academia, conmemora el heroísmo del regimiento de Alcántara en la Campaña de Marruecos (1921). Los soldados que forman el conjunto escultórico van vestidos con diferentes uniformes de la Caballería Española, desde los de la Caballería en Flandes hasta los utilizados en la Campaña de Marruecos.",
     imagePhone: "/images/phone/phoneD2.png",
     index: "noveno",
+    lat: 41.6478,
+    lng: -4.73068,
     pucelano: {
       clue1: {
         text: "Fíjate en las fachadas del entorno.",
@@ -396,6 +414,8 @@ export const tests = {
       "Cristóbal Colón fue el navegante y cartógrafo que bajo la Corona de Castilla descubrió América en 1492. Según los registros de la época, la primera visita a Valladolid se produjo el 11 de agosto de 1486. Colón se hospedó en el Monasterio de Nuestra Señora del Prado y cuenta la leyenda que en este convento había una virgen a la que el navegante rezó para que los Reyes Católicos apoyaran su idea de viajar «al nuevo mundo». La virgen se encuentra actualmente en la Iglesia de San Nicolás y recibe el nombre de Colón o del Descubrimiento. Tras su hazaña los Reyes Católicos le nombraron virrey y gobernador de lo que entonces se conocía como 'Las Indias'. Cristobal Colón falleció el 20 de mayo de 1506 en Valladolid. Sus últimos días los pasó en el ya desaparecido convento de San Francisco. Actualmente, hay un monumento a Colón en la ciudad que se encuentra en la Plaza de Colón, donde se representan momentos de su vida. ",
     imagePhone: "/images/phone/phoneV.png",
     index: "décimo",
+    lat: 41.65198,
+    lng: -4.72854,
     pucelano: {
       clue1: {
         text: "Manten la vista en el suelo.",

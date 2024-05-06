@@ -1,4 +1,10 @@
 <script setup>
+const props = defineProps({
+  localizacion: {
+    type: Object,
+    required: true,
+  },
+});
 const visible = ref(false);
 </script>
 <template>
@@ -13,6 +19,9 @@ const visible = ref(false);
       },
     }"
   >
-    <Map />
+    <Map
+      class="mt-4 flex justify-content-center"
+      :localizacion="localizacion"
+    />
   </PDialog>
 </template>
