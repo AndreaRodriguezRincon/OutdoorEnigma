@@ -13,6 +13,6 @@ const visible = ref(false);
       },
     }"
   >
-    <img src="/images/enigma/mapaVistaPrevia.png" alt="Pucelano" width="120"
-  /></PDialog>
+    <Map />
+  </PDialog>
 </template>

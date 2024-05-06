@@ -32,26 +32,29 @@ const mostrarPucelano = () => {
           width="350"
         />
       </div>
-      <div class="flex flex-column mt-4">
-        <span class="font-bold text-xl text-brown"> Lugar de inicio </span>
+      <div class="mt-5 w-22rem">
+        <span class="font-bold text-xl text-brown">Lugar de inicio </span>
         <div class="mt-2">
           <span class="pi pi-map-marker text-orange text-2xl"></span>
           <span class="text-brown"> Plaza Mayor de Valladolid </span>
         </div>
       </div>
-      <div class="flex flex-column flex align-items-center mt-4">
-        <span class="font-bold text-xl text-brown"> Historia</span>
-        <span class="mt-2 text-brown text-justify md:w-5">
-          Gaby decide celebrar su 30 cumpleaños en la ciudad de Valladolid en
-          compañía de sus amigos más cercanos. Después de una noche repleta de
-          risas, cena, fiesta, fotos…, al regresar exhaustos al hotel, se
-          percatan de que todos sus móviles han desaparecido. Deciden entonces
-          poner fin a la noche y dirigirse a descansar para acudir temprano a la
-          policía al día siguiente e informar del incidente. Sin embargo, a la
-          mañana siguiente una nota bajo la puerta de la habitación de Gaby le
-          indica que si quiere recuperar su móvil y el de sus amigos, deberá
-          acudir a la siguiente dirección: Plaza Mayor de Valladolid.
-        </span>
+
+      <div class="mt-5 w-22rem">
+        <span class="font-bold text-xl text-brown">Historia</span>
+        <div class="mt-2 text-justify">
+          <span class="mt-2 text-brown md:w-5">
+            Gaby decide celebrar su 30 cumpleaños en la ciudad de Valladolid en
+            compañía de sus amigos más cercanos. Después de una noche repleta de
+            risas, cena, fiesta, fotos…, al regresar exhaustos al hotel, se
+            percatan de que todos sus móviles han desaparecido. Deciden entonces
+            poner fin a la noche y dirigirse a descansar para acudir temprano a
+            la policía al día siguiente e informar del incidente. Sin embargo, a
+            la mañana siguiente una nota bajo la puerta de la habitación de Gaby
+            le indica que si quiere recuperar su móvil y el de sus amigos,
+            deberá acudir a la siguiente dirección: Plaza Mayor de Valladolid.
+          </span>
+        </div>
       </div>
       <div class="flex gap-5 mt-5">
         <PTag rounded class="bg-white border-2 border-green shadow-3">
@@ -91,54 +94,55 @@ const mostrarPucelano = () => {
           </LMap>
         </div>
       </div>
-      <div class="flex flex-column mt-4">
+
+      <div class="mt-5 w-22rem">
         <span class="font-bold text-xl text-brown">Recomendaciones</span>
-        <PTag
-          rounded
-          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
-        >
-          <div class="flex align-items-center gap-3">
-            <img
-              alt="Tiempo"
-              src="/images/icons/bateria.png"
-              style="width: 40px"
-            />
-            <span class="text-base text-green">Batería +70% </span>
-          </div>
-        </PTag>
-        <PTag
-          rounded
-          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
-        >
-          <div class="flex align-items-center gap-3">
-            <img
-              alt="Tiempo"
-              src="/images/icons/zapatos.png"
-              style="width: 40px"
-            />
-            <span class="text-base text-green">Calzado y ropa comoda </span>
-          </div>
-        </PTag>
-        <PTag
-          rounded
-          class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
-        >
-          <div class="flex align-items-center gap-4">
-            <img
-              alt="Tiempo"
-              src="/images/icons/clima.png"
-              style="width: 40px"
-            />
-            <span class="text-base text-green"> Revisar el tiempo </span>
-          </div>
-        </PTag>
+        <div class="mt-5 flex flex-column">
+          <PTag
+            rounded
+            class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
+          >
+            <div class="flex align-items-center gap-3">
+              <img
+                alt="Tiempo"
+                src="/images/icons/bateria.png"
+                style="width: 40px"
+              />
+              <span class="text-base text-green">Batería +70% </span>
+            </div>
+          </PTag>
+          <PTag
+            rounded
+            class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
+          >
+            <div class="flex align-items-center gap-3">
+              <img
+                alt="Tiempo"
+                src="/images/icons/zapatos.png"
+                style="width: 40px"
+              />
+              <span class="text-base text-green">Calzado y ropa comoda </span>
+            </div>
+          </PTag>
+          <PTag
+            rounded
+            class="bg-white border-2 border-green shadow-3 h-3rem mt-3"
+          >
+            <div class="flex align-items-center gap-4">
+              <img
+                alt="Tiempo"
+                src="/images/icons/clima.png"
+                style="width: 40px"
+              />
+              <span class="text-base text-green"> Revisar el tiempo </span>
+            </div>
+          </PTag>
+        </div>
       </div>
       <div class="flex justify-content-center">
         <PButton
           rounded
-          label="Iniciar Enigma
-
-    "
+          label="Iniciar Enigma"
           class="mt-4 mb-4 shadow-3 bg-orange border-none"
           @click="mostrarPucelano"
         />
