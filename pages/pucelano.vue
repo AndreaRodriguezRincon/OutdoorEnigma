@@ -1,5 +1,5 @@
 <script setup>
-import { actions } from "../composables/timerStore";
+import { actions } from "../stores/timerStore";
 const router = useRouter();
 const inicioJuego = () => {
   actions.resetTime();
@@ -72,4 +72,3 @@ const visible = ref(false);
     </div>
   </div>
 </template>
-

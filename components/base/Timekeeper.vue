@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import { state, actions } from "../composables/timerStore";
+import { state, actions } from "../stores/timerStore";
 
 onMounted(() => {
   actions.startTimer();

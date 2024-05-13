@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { actions } from "../composables/timerStore";
+import { actions } from "../stores/timerStore";
 
 const props = defineProps({
   pucelano: {

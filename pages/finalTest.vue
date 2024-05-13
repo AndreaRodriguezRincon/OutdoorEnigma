@@ -1,5 +1,5 @@
 <script setup>
-import { actions } from "../composables/timerStore";
+import { actions } from "../stores/timerStore";
 const router = useRouter();
 const activeIndex = ref(11);
 const visible = ref(false);
