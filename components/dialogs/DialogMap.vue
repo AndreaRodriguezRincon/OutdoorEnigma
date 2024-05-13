@@ -11,7 +11,7 @@ const visible = ref(false);
   <PDialog
     v-model:visible="visible"
     modal
-    header="Plaza Mayor"
+    :header="`${props.localizacion.place}`"
     class="text-brown min-w-min text-brown shadow-3"
     :pt="{
       title: {

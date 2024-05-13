@@ -85,8 +85,4 @@ const mostrarMensaje = (event) => {
     </PAccordionTab>
   </PAccordion>
 </template>
-<style scoped>
-.text-brown {
-  color: #783d19;
-}
-</style>
+

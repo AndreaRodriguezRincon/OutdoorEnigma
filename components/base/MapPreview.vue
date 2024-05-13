@@ -19,9 +19,3 @@ const visible = ref(false);
     </span>
   </div>
 </template>
-s
-<style scoped>
-.text-brown {
-  color: #783d19;
-}
-</style>

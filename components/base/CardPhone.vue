@@ -46,20 +46,3 @@ const nextTest = () => {
     </template>
   </PCard>
 </template>
-<style scoped>
-.text-brown {
-  color: #783d19;
-}
-.text-green {
-  color: #5f6f52;
-}
-.text-lightGreen {
-  color: #a9b388;
-}
-.text-orange {
-  color: #c4661f;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
-</style>

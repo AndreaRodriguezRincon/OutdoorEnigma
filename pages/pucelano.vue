@@ -1,11 +1,14 @@
 <script setup>
+import { actions } from "../composables/timerStore";
 const router = useRouter();
 const inicioJuego = () => {
+  actions.resetTime();
   router.push({
     path: "tests",
     query: { question: "test1" },
   });
 };
+
 const visible = ref(false);
 </script>
 <template>
@@ -69,23 +72,4 @@ const visible = ref(false);
     </div>
   </div>
 </template>
-<style scoped>
-.enigmas {
-  background: linear-gradient(
-    rgba(169, 179, 136, 100%),
-    rgba(201, 137, 88, 30%)
-  );
-}
-.text-brown {
-  color: #783d19;
-}
-.bg-green {
-  background-color: #5f6f52;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
-.text-orange {
-  color: #c4661f;
-}
-</style>
+

@@ -3,8 +3,4 @@
     <img src="/images/base/logo.png" alt="Image" width="250px" />
   </div>
 </template>
-<style scoped>
-.bg-green {
-  background-color: #5f6f52;
-}
-</style>
+

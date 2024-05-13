@@ -42,11 +42,4 @@ const letras = ref([
     </PSteps>
   </div>
 </template>
-<style scoped>
-.bg-orange {
-  background-color: #c4661f;
-}
-.text-green {
-  color: #a9b388;
-}
-</style>
+

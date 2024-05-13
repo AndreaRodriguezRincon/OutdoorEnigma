@@ -10,25 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
-    "@targomo/core": "^0.7.12",
-    "@targomo/googlemaps": "^0.1.1",
-    "@targomo/leaflet": "^0.1.1",
     "@vee-validate/nuxt": "^4.12.5",
-    "leaflet-routing-machine": "^3.2.12",
     "nuxt": "^3.10.3",
-    "pinia": "^2.1.7",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
-    "vee-validate": "^4.12.5",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0",
-    "vue-timer-hook": "^1.0.84",
-    "vue3-leaflet": "^1.0.48",
-    "vuex": "^4.1.0"
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxt/image": "^1.6.0",
     "nuxt-primevue": "^0.3.1",
     "nuxt3-leaflet": "^1.0.12"
   }

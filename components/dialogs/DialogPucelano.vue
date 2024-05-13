@@ -31,8 +31,3 @@ const visible = ref(false);
     <AccordionTracks :pucelano="props.pucelano" />
   </PDialog>
 </template>
-<style scoped>
-.text-brown {
-  color: #783d19;
-}
-</style>

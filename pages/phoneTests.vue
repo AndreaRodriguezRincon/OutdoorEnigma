@@ -41,9 +41,7 @@ const visible = ref(false);
 .text-green {
   color: #5f6f52;
 }
-.text-lightGreen {
-  color: #a9b388;
-}
+
 .text-orange {
   color: #c4661f;
 }

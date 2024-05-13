@@ -20,7 +20,4 @@
   background-position: center;
   height: 100vh;
 }
-.text-orange {
-  color: #c4661f;
-}
 </style>

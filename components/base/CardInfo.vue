@@ -45,15 +45,6 @@ const showPhone = () => {
   </PCard>
 </template>
 <style scoped>
-.text-brown {
-  color: #783d19;
-}
-.text-green {
-  color: #5f6f52;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
 .img-float {
   float: left;
 }

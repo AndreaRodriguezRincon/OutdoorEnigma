@@ -14,8 +14,3 @@ const props = defineProps({
     <TestLine class="w-12 lg:w-4" :activeIndex="props.activeIndex" />
   </div>
 </template>
-<style scoped>
-.bg-green {
-  background-color: #5f6f52;
-}
-</style>

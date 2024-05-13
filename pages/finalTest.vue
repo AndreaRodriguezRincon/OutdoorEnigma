@@ -71,25 +71,6 @@ const checkAnswer = () => {
   </div>
 </template>
 <style scoped>
-.enigmas {
-  background: linear-gradient(
-    rgba(169, 179, 136, 100%),
-    rgba(201, 137, 88, 30%)
-  );
-}
-
-.text-brown {
-  color: #783d19;
-}
-.text-green {
-  color: #5f6f52;
-}
-.text-orange {
-  color: #c4661f;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
 .custom-otp-input {
   color: #783d19;
   width: 30px;

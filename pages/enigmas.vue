@@ -28,18 +28,8 @@ const mostrarHistoriaEnigmaValladolid = () => {
   </div>
 </template>
 <style scoped>
-.enigmas {
-  background: linear-gradient(
-    rgba(169, 179, 136, 100%),
-    rgba(201, 137, 88, 30%)
-  );
-  height: 100vh;
-}
 .imgEnigmaValladolid {
   border-radius: 20px;
   cursor: pointer;
-}
-.text-brown {
-  color: #783d19;
 }
 </style>

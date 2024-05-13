@@ -151,27 +151,6 @@ const mostrarPucelano = () => {
   </div>
 </template>
 <style scoped>
-.enigmas {
-  background: linear-gradient(
-    rgba(169, 179, 136, 100%),
-    rgba(201, 137, 88, 30%)
-  );
-}
-.text-brown {
-  color: #783d19;
-}
-.text-orange {
-  color: #c4661f;
-}
-.text-green {
-  color: #5f6f52;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
-.border-green {
-  color: #5f6f52;
-}
 #map {
   height: 180px;
 }

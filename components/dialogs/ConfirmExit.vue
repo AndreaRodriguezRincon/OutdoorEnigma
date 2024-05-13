@@ -36,24 +36,3 @@ const salirJuego = () => {
     </div>
   </PDialog>
 </template>
-<style scoped>
-.enigmas {
-  background: linear-gradient(
-    rgba(169, 179, 136, 100%),
-    rgba(201, 137, 88, 30%)
-  );
-  height: 100vh;
-}
-.text-brown {
-  color: #783d19;
-}
-.bg-green {
-  background-color: #5f6f52;
-}
-.bg-orange {
-  background-color: #c4661f;
-}
-.bg-brown {
-  background-color: #783d19;
-}
-</style>

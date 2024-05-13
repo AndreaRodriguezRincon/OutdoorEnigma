@@ -1,4 +1,4 @@
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 
 export const state = reactive({
   time: 0,
@@ -28,5 +28,8 @@ export const actions = {
   },
   addMinutes(minute) {
     mutations.setTime(state.time + minute * 60);
+  },
+  resetTime() {
+    mutations.setTime(0);
   },
 };
