@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 import { actions } from "../stores/timerStore";
 
 const props = defineProps({
@@ -85,4 +84,3 @@ const mostrarMensaje = (event) => {
     </PAccordionTab>
   </PAccordion>
 </template>
-
