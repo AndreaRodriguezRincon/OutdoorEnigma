@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@targomo/googlemaps": "^0.1.1",
     "@vee-validate/nuxt": "^4.12.5",
     "nuxt": "^3.10.3",
     "primeflex": "^3.3.1",
