@@ -4,7 +4,7 @@
     <TheHeader />
     <div class="ml-3 mr-3 flex flex-column flex align-items-center">
       <PCard
-        class="mt-4 w-full lg:w-4 border-round-3xl border-solid border-green-800 shadow-3"
+        class="mt-4 mb-4 w-full lg:w-4 border-round-3xl border-solid border-green-800 shadow-3"
       >
         <template #content>
           <div class="flex flex-column flex align-items-center">
