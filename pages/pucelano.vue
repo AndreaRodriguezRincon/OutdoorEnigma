@@ -29,7 +29,7 @@ const visible = ref(false);
           <div class="flex flex-column flex align-items-center">
             <div class="flex flex-column flex align-items-center">
               <span class="text-brown mt-3 lg:w-10 text-justify">
-                ¡Hola! Soy <span class="font-bold">Pucelano </span>, así es como
+                ¡Hola! Soy <span class="font-bold">Pucelano</span>, así es como
                 nos conocen coloquialmente a los habitantes de Valladolid, y
                 nadie mejor que yo puede ayudarte en este gran enigma entre las
                 calles de la ciudad. En cada desafío, estaré a tu disposición;

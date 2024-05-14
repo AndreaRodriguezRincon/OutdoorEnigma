@@ -44,7 +44,6 @@ const checkAnswer = () => {
         <img
           :src="`${props.test.imagePath}`"
           alt="Imagen prueba"
-          width="350"
           class="mt-4"
         />
         <PFloatLabel class="mt-6">
@@ -83,4 +82,9 @@ const checkAnswer = () => {
     </template>
   </PCard>
 </template>
-
+<style scoped>
+img {
+  max-width: 90%;
+  height: auto;
+}
+</style>
