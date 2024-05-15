@@ -1,3 +1,4 @@
+// Se exporta el objeto tests que contiene todas las pruebas definidas
 export const tests = {
   test1: {
     urlQueryParam: "test1",

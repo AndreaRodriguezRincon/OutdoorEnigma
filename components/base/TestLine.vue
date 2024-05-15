@@ -1,10 +1,12 @@
 <script setup>
+// Definición de las propiedades del componente
 const props = defineProps({
   activeIndex: {
     type: Number,
     required: true,
   },
 });
+// Referencia para almacenar las letras tras superar la prueba
 const letras = ref([
   { label: "L" },
   { label: "I" },
@@ -20,6 +22,7 @@ const letras = ref([
 </script>
 <template>
   <div class="stepsDiv">
+    <!-- Componente de timeline -->
     <PSteps
       :model="letras"
       class="custom-steps"
@@ -27,7 +30,9 @@ const letras = ref([
       :activeStep="1"
     >
       <template #item="{ item, active, index, label }">
+        <!-- Estilos en función de si se esta en la pregunta actual o no  -->
         <span
+        
           :class="[
             'inline-flex align-items-center justify-content-center align-items-center border-circle  border-1 text-xl h-2rem w-2rem z-1 mb-5',
             {
@@ -36,6 +41,7 @@ const letras = ref([
             },
           ]"
         >
+        <!-- Si el numero de prueba es mayor que el indice, se muetra la letra y si no el numero de prueba  + 1  -->
           {{ index < props.activeIndex ? label : index + 1 }}
         </span>
       </template>

@@ -1,9 +1,12 @@
 <script setup>
+// Define la seguridad de la página con el middleware "info-tests-url"
 definePageMeta({
   middleware: "info-tests-url",
 });
+// Importación de los datos de los tests
 import { tests } from "~/data/data";
 const { query } = useRoute();
+// Obtiene los datos de la pregunta actual basados en la query de la ruta
 const questionData = tests[query.question];
 const visible = ref(false);
 </script>
@@ -26,4 +29,3 @@ const visible = ref(false);
     </div>
   </div>
 </template>
-

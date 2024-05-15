@@ -1,13 +1,16 @@
 <script setup>
+// Definición de propiedades del componente
 const props = defineProps({
   pucelano: {
     type: Object,
     required: true,
   },
 });
+//Bandera para controlar la visibilidad del diálogo
 const visible = ref(false);
 </script>
 <template>
+  <!-- Componente de dialogo para mostrar las pistas de la prueba -->
   <PDialog
     v-model:visible="visible"
     modal
@@ -20,6 +23,7 @@ const visible = ref(false);
     }"
   >
     <div class="flex align-items-center gap-4">
+      <!-- Imagen del avatar de Pucelano -->
       <img
         src="/images/enigma/pucelano.png"
         alt="Pucelano"
@@ -28,6 +32,7 @@ const visible = ref(false);
       />
       <span class="text-brown">Hola, ¿necesitas mi ayuda?</span>
     </div>
+    <!-- Incluye el componente de acordeon con las pistas -->
     <AccordionTracks :pucelano="props.pucelano" />
   </PDialog>
 </template>

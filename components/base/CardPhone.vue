@@ -1,15 +1,20 @@
 <script setup>
+// Importación de utilidades de enrutamiento
 const router = useRouter();
+// Definición de las propiedades del componente
 const props = defineProps({
   phone: {
     type: Object,
     required: true,
   },
 });
+// Función para mostrar siguiente prueba
 const nextTest = () => {
+  // Si la prueba actual es la última, redirige a la página "finalTest"
   if (props.phone.urlQueryParam === "test10") {
     router.push("/finalTest");
   } else {
+    // Si no es la última, redirige a la siguiente pregunta
     router.push({
       path: "tests",
       query: { question: props.phone.urlQueryParamNextTest },
@@ -18,6 +23,7 @@ const nextTest = () => {
 };
 </script>
 <template>
+  <!-- Componente de tarjeta -->
   <PCard
     class="mt-4 w-full lg:w-4 border-round-3xl border-solid border-green-800"
   >
@@ -29,8 +35,10 @@ const nextTest = () => {
         >Has recuperado el {{ props.phone.index }} móvil</span
       >
     </template>
+    <!-- Contenido del componente -->
     <template #content>
       <div class="flex flex-column flex align-items-center">
+        <!-- Imagen de móvil con letra -->
         <img
           :src="`${props.phone.imagePhone}`"
           alt="Imagen móvil con letra"

@@ -1,5 +1,7 @@
 <script setup>
+// Importación de utilidades de enrutamiento
 const router = useRouter();
+// Función para redirigir a la página del enigma de Valladolid
 const mostrarHistoriaEnigmaValladolid = () => {
   router.push("/enigmaValladolid");
 };
@@ -7,6 +9,7 @@ const mostrarHistoriaEnigmaValladolid = () => {
 
 <template>
   <div class="enigmas">
+    <!-- Componente TheHeader -->
     <TheHeader />
     <div class="ml-3 mr-3 flex justify-content-center">
       <div class="flex flex-column mt-4">

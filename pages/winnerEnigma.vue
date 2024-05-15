@@ -1,4 +1,5 @@
 <script setup>
+// Define la seguridad de la página con el middleware "tests-url"
 definePageMeta({
   middleware: "tests-url",
 });

@@ -7,6 +7,7 @@ const props = defineProps({
 });
 </script>
 <template>
+  <!-- Componente una vez iniciada las pruebas con timeline de las pruebas-->
   <div
     class="flex flex-column flex align-items-center bg-green p-2 border-round-bottom-2xl"
   >

@@ -1,11 +1,12 @@
 <script setup>
 import { actions } from "../stores/timerStore";
 const router = useRouter();
+// Función para iniciar el juego, reseteando el tiempo y navegando a la página de pruebas
 const inicioJuego = () => {
   actions.resetTime();
   router.push({
     path: "tests",
-    query: { question: "test1" },
+    query: { question: "test1" }, // Se especifica la pregunta inicial
   });
 };
 

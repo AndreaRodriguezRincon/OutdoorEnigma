@@ -1,9 +1,11 @@
 <script setup>
+// Define la seguridad de la página con el middleware "phone-tests-url"
 +definePageMeta({
   middleware: "phone-tests-url",
 });
 import { tests } from "~/data/data";
 const { query } = useRoute();
+// Extracción de los datos de la pregunta actual basada en la consulta
 const questionData = tests[query.question];
 const visible = ref(false);
 </script>
@@ -26,4 +28,3 @@ const visible = ref(false);
     </div>
   </div>
 </template>
-

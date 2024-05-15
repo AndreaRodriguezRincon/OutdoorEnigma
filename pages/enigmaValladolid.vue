@@ -1,5 +1,7 @@
 <script setup>
+//Nivel de zoom del mapa
 const zoom = ref(15);
+//Coordenadas del polígono en el mapa
 const poligonoCoords = ref([
   [41.65198, -4.72854],
   [41.65316, -4.72678],
@@ -13,12 +15,14 @@ const poligonoCoords = ref([
 ]);
 const poligonoColor = "#c4661f";
 const router = useRouter();
+// Función para redirigir a la página de inicio del enigma
 const mostrarPucelano = () => {
   router.push("/inicioEnigma");
 };
 </script>
 <template>
   <div class="enigmas">
+     <!-- Componente TheHeader -->
     <TheHeader />
 
     <div class="ml-3 mr-3 flex flex-column flex align-items-center">
@@ -83,6 +87,7 @@ const mostrarPucelano = () => {
       <div class="mt-5">
         <span class="font-bold text-xl text-brown">Área de juego</span>
         <div class="mt-3" style="height: 30rem; width: 22rem">
+           <!-- Componente LMap de Leaflet para mostrar el mapa -->
           <LMap ref="map" :zoom="zoom" :center="[41.65209, -4.72539]">
             <LTileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -90,6 +95,7 @@ const mostrarPucelano = () => {
               layer-type="base"
               name="OpenStreetMap"
             />
+             <!-- Polígono en el mapa -->
             <LPolygon :lat-lngs="poligonoCoords" :color="poligonoColor" />
           </LMap>
         </div>

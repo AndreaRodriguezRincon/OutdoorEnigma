@@ -2,14 +2,16 @@
 import { computed } from "vue";
 import { state, actions } from "../stores/timerStore";
 
+// Inicia el temporizador cuando el componente se monta
 onMounted(() => {
   actions.startTimer();
 });
-
+// Detiene el temporizador cuando el componente se desmonta para evitar que siga corriendo el tiempo
 onUnmounted(() => {
   actions.stopTimer();
 });
 
+// Calcula el tiempo formateado en horas, minutos y segundos
 const formattedTime = computed(() => {
   const hours = Math.floor(state.time / 3600);
   const minutes = Math.floor((state.time % 3600) / 60);
@@ -17,6 +19,7 @@ const formattedTime = computed(() => {
   return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 });
 
+// Función para rellenar con ceros los números menores que 10
 const pad = (num) => {
   return num.toString().padStart(2, "0");
 };
@@ -25,7 +28,7 @@ const pad = (num) => {
 <template>
   <div class="block-timer">
     <img src="/images/icons/reloj.png" class="img-timer" alt="Cronómetro" />
-
+    <!-- Muestra el tiempo formateado -->
     <span class="text-3xl text-white timer">{{ formattedTime }}</span>
   </div>
 </template>

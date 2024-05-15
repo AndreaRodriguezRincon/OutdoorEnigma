@@ -1,4 +1,5 @@
 <script setup>
+// Define la seguridad de la página con el middleware "tests-url"
 definePageMeta({
   middleware: "tests-url",
 });
@@ -8,6 +9,7 @@ const questionData = tests[query.question];
 const visible = ref(false);
 const visiblePucelano = ref(false);
 const visibleMap = ref(false);
+// Se ejecuta al montar el componente para cargar los scripts de Leaflet y Targomo para que cuando se abra el dialogo ya esten cargados previamente y no genere errores
 onMounted(() => {
   const script1 = document.createElement("script");
   script1.src = "https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js";

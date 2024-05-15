@@ -1,11 +1,14 @@
 <script setup>
 const router = useRouter();
+  // Función para redirigir a la página "pucelano"
 const explicarPucelano = () => {
   router.push("/pucelano");
 };
 const visible = ref(false);
+// Variables reactivas para almacenar la latitud y longitud obtenidas de la geolocalización
 const lat = ref(0);
 const lng = ref(0);
+ // Función para obtener la ubicación actual del usuario mediante geolocalización
 const getLocation = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -14,6 +17,7 @@ const getLocation = () => {
     });
   }
 };
+//para ejecutar la función getLocation() después de que el componente se monta
 onMounted(() => {
   getLocation();
 });

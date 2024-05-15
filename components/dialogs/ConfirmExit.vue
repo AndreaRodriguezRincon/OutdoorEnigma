@@ -1,12 +1,17 @@
 <script setup>
+// Importación de utilidades de enrutamiento
 const router = useRouter();
+// Referencia al componente de diálogo
 const dialogRef = ref();
+// Bandera para controlar la visibilidad del diálogo
 const visible = ref(false);
+  // Función para salir del enigma y redirigir al usuario a la página principal
 const salirJuego = () => {
   router.push("../../");
 };
 </script>
 <template>
+   <!-- Componente PDialog para el diálogo de confirmación de salida del enigma -->
   <PDialog
     ref="dialogRef"
     v-model:visible="visible"
@@ -20,6 +25,7 @@ const salirJuego = () => {
     }"
   >
     <span class="text-brown">¿Quieres abandonar el enigma?</span>
+   <!-- Botones para confirmar o cancelar la salida del enigma -->
     <div class="flex justify-content-center mt-4 gap-3">
       <PButton
         rounded

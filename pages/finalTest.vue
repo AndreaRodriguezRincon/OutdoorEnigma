@@ -6,12 +6,15 @@ const visible = ref(false);
 const answer = ref(null);
 const correctAnswer = ref("VALLADOLID");
 const isCorrectAnswer = ref(null);
+// Función para comprobar la respuesta
 const checkAnswer = () => {
   const correctAnswer = "VALLADOLID";
   if (answer.value === correctAnswer) {
+     // Detiene el temporizador y redirige a la página de ganador
     actions.stopTimer();
     router.push("/winnerEnigma");
   } else {
+     // Indica que la respuesta es incorrecta y limpia la respuesta
     isCorrectAnswer.value = false;
     answer.value = "";
   }
