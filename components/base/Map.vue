@@ -21,7 +21,7 @@ onMounted(() => {
   // Crea una nueva instancia de TargomoClient
   const client = new tgm.TargomoClient(
     "westcentraleurope",
-    "28SZVTKKWP0Z3AOCA1W6"
+    "VMQTOXUKHO5ZZXXN9MY0"
   );
 
   const tileLayer = new tgm.leaflet.TgmLeafletTileLayer(client, "Light");
@@ -127,7 +127,7 @@ onMounted(() => {
   // Actualiza la ubicación del usuario periódicamente
   intervalId = setInterval(() => {
     map.locate(options);
-  }, 5000);
+  }, 30000);
 });
 
 onUnmounted(() => {

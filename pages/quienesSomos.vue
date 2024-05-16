@@ -12,7 +12,7 @@
               >¿Qué es OutDoor Enigma?
             </span>
             <video autoplay loop muted>
-              <source :src="'/video/videoValladolid.mp4'" type="video/mp4" />
+              <source :src="'/video/video_Valladolid.mp4'" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
             </video>
             <span class="mt-4 mr-3 ml-3 text-brown text-justify">
