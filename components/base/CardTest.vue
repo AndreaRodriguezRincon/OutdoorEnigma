@@ -65,6 +65,7 @@ const checkAnswer = () => {
           <PInputText
             v-if="props.test.type === 'input'"
             id="answer"
+            autocomplete="off"
             v-model="answer"
             class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
@@ -72,6 +73,7 @@ const checkAnswer = () => {
             v-else-if="props.test.type === 'code'"
             id="answer"
             v-model="answer"
+            autocomplete="off"
             mask="99-9"
             class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
@@ -79,6 +81,7 @@ const checkAnswer = () => {
             v-else
             id="answer"
             v-model="answer"
+            autocomplete="off"
             mask="99-99-9999"
             class="text-brown border-round-xl border-2 shadow-3 w-15rem"
           />
